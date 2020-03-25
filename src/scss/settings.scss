@@ -1,0 +1,145 @@
+@font-face {
+  font-family: GothamPro;
+  src: url(../fonts/GothamPro.ttf);
+}
+
+@font-face {
+  font-family: GothamProBold;
+  src: url(../fonts/GothamPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: GothamProBlack;
+  src: url(../fonts/GothamPro-Black.ttf);
+}
+
+body {
+  padding-top: 3%;
+  background-color: #f0f1f1;
+  background-image: url("../img/pink-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1 {
+  color: #ed1c24;
+  text-transform: uppercase;
+  font-family: GothamProBold;
+  font-size: 72px;
+}
+
+h2 {
+  color: #404041;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+  font-family: GothamProBold;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+h3 {
+  color: #ed1c24;
+  text-transform: uppercase;
+  font-family: GothamProBold;
+  font-size: 30px;
+}
+
+header {
+  padding-bottom: 9%;
+}
+
+footer {
+  padding-bottom: 5%;
+}
+
+.row {
+  padding-left: 4%;
+  padding-right: 4%;
+
+  &_padding {
+    padding-top: 10%;
+  }
+
+  &_center {
+    justify-content: center;
+  }
+
+  &_align-center {
+    align-items: center;
+  }
+
+  &_sp-around {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &_padding-top-50 {
+    padding-top: 2%;
+  }
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+tr {
+  &:nth-child(2) {
+    border-bottom: 1px solid #b8b8b8;
+  }
+
+  &:last-child {
+    border-top: 1px solid #b8b8b8;
+  }
+
+  &:last-child td {
+    padding-top: 1%;
+  }
+}
+
+th {
+  color: #ed1c24;
+  font-family: GothamProBold;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20%;
+  border-right: 1px solid #b8b8b8;
+
+  &:first-child {
+    font-size: 50px;
+    text-align: left;
+    width: 40%;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+td {
+  font-family: GothamPro;
+  width: 20%;
+  text-align: center;
+  color: #404041;
+  font-size: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  border-right: 1px solid #b8b8b8;
+  border-bottom: none;
+
+  &:first-child {
+    width: 40%;
+    text-align: left;
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
