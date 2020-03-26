@@ -30,7 +30,12 @@ $(document).ready(function () {
             'phone': number,
             'message': message
         }
-        $(".modal-window").slideToggle();
+        window_form = this.hasAttribute('modal');
+        if (window_form === true) {
+            console.log(window_form);
+        }
+        let modal = document.getElementsByClassName('modal-window');
+        $(modal[0]).slideToggle();
         let header = document.getElementsByTagName('header')[0];
         let main = document.getElementsByTagName('main')[0];
         let footer = document.getElementsByTagName('footer')[0];
@@ -40,14 +45,19 @@ $(document).ready(function () {
     });
 });
 
-const close_window = function () {
-    $(".modal-window").slideToggle();
+const close_window = function (number) {
+    let modal = document.getElementsByClassName('modal-window');
+    $(modal[number]).slideToggle();
     let header = document.getElementsByTagName('header')[0];
     let main = document.getElementsByTagName('main')[0];
     let footer = document.getElementsByTagName('footer')[0];
     header.style.filter = 'blur(0)';
     main.style.filter = 'blur(0)';
     footer.style.filter = 'blur(0)';
+}
+const show_window = function (number) {
+    let modal = document.getElementsByClassName('modal-window');
+    $(modal[number]).slideToggle();
 }
 
 

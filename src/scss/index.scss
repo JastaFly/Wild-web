@@ -73,7 +73,7 @@
       padding-right: 2%;
     }
 
-    & .form__mini-text {
+    &__mini-text {
       flex-basis: 45%;
       margin-top: 0;
       margin-bottom: 0;
@@ -181,14 +181,17 @@
     margin-bottom: 5%;
     border-radius: 10px;
     font-size: 16px;
+    outline: none;
 
     &_gray {
       text-align: center;
       padding-left: 0;
       border: 1px solid #b8b8b8;
-      color: #b8b8b8;
       padding-top: 2%;
       padding-bottom: 2%;
+      ::placeholder {
+        color: #b8b8b8;
+      }
     }
   }
 
@@ -807,6 +810,19 @@ input[type="submit"] {
   background-color: #FFFFFF;
   padding-bottom: 2%;
   display: none;
+  h3 {
+    text-align: center;
+  }
+  & input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 80%;
+
+    &[type=submit] {
+      width: 60%;
+    }
+  }
 
   &__top {
     background-color: #ed1c24;

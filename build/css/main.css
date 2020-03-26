@@ -210,7 +210,7 @@ td {
     .form__row:last-child {
       justify-content: flex-end;
       padding-right: 2%; }
-    .form__row .form__mini-text {
+    .form__row__mini-text {
       flex-basis: 45%;
       margin-top: 0;
       margin-bottom: 0; }
@@ -280,14 +280,24 @@ td {
     padding-bottom: 5%;
     margin-bottom: 5%;
     border-radius: 10px;
-    font-size: 16px; }
+    font-size: 16px;
+    outline: none; }
     .form__input_gray {
       text-align: center;
       padding-left: 0;
       border: 1px solid #b8b8b8;
-      color: #b8b8b8;
       padding-top: 2%;
       padding-bottom: 2%; }
+      .form__input_gray ::-webkit-input-placeholder {
+        color: #b8b8b8; }
+      .form__input_gray ::-moz-placeholder {
+        color: #b8b8b8; }
+      .form__input_gray :-ms-input-placeholder {
+        color: #b8b8b8; }
+      .form__input_gray ::-ms-input-placeholder {
+        color: #b8b8b8; }
+      .form__input_gray ::placeholder {
+        color: #b8b8b8; }
   .form__input_white {
     border: 1px solid white; }
     .form__input_white::-webkit-input-placeholder {
@@ -752,6 +762,15 @@ input[type="submit"] {
   background-color: #FFFFFF;
   padding-bottom: 2%;
   display: none; }
+  .modal-window h3 {
+    text-align: center; }
+  .modal-window input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    width: 80%; }
+    .modal-window input[type=submit] {
+      width: 60%; }
   .modal-window__top {
     background-color: #ed1c24;
     height: 90px;

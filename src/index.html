@@ -28,7 +28,7 @@
                     <div class="offer__group">
                         <p class="offer__mimi-text">Рассчитайте стоимость вашего
                             лендинг пейджа за 1 минуту</p>
-                        <div class="red-button">Рассчитать стоимость</div>
+                        <div class="red-button" onclick="show_window(1)">Рассчитать стоимость</div>
                     </div>
                 </div>
             </div>
@@ -440,7 +440,7 @@
             </div>
         </div>
         <div class="row row_center">
-            <div class="col-xl-2 red-button red-button_padding">
+            <div class="col-xl-2 red-button red-button_padding" onclick="show_window(1)">
                 Хочу больше продаж!
             </div>
         </div>
@@ -586,9 +586,9 @@
             </a>
         </div>
         <div class="row row_center">
-            <div class="col-xl-2 red-button red-button_padding">
+            <a href="" class="col-xl-2 red-button red-button_padding">
                 Показать ещё
-            </div>
+            </a>
         </div>
         <div class="row row_sp-around menstruation-bg">
             <div class="col-xl-6">
@@ -641,7 +641,7 @@
                     директологами, имеющими серфикаты качества и прошедшими повышение квалификации в ТОП 10 по РФ
                     агентств контекстной рекламы «М-контекст» - очень важно чтобы комплекс разрабатывался в одном месте.
                     Команда специалистов погружается в проект и не перекладывает друг на друга ответственность. </p>
-                <span class="red-button">Уточнить стоимость настройки</span>
+                <span class="red-button" onclick="show_window(1)">Уточнить стоимость настройки</span>
             </div>
             <img src="./img/serious.png" alt="" class="col-xl-6 big-img">
         </div>
@@ -907,7 +907,7 @@
                     <li><span>Аудит вашего сайта</span></li>
                     <li><span>Аудит рекламы Яндекс / Google</span></li>
                 </ul>
-                <p class="red-button">Обсудить проект</p>
+                <p class="red-button" onclick="show_window(1)">Обсудить проект</p>
             </div>
         </div>
         <h2>команда</h2>
@@ -1019,7 +1019,7 @@
 </main>
 <div class="modal-window">
     <div class="modal-window__top">
-        <div class="modal-window__cross" onclick="close_window()">
+        <div class="modal-window__cross" onclick="close_window(0)">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
                  x="0px" y="0px" width="30px"
                  height="30px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
@@ -1064,6 +1064,40 @@
     </div>
     <p class="modal-window__big-text">Всё ok!</p>
     <p class="modal-window__mini-text">Данные отправлены</p>
+</div>
+<div class="modal-window">
+    <div class="modal-window__top">
+        <div class="modal-window__cross" onclick="close_window(1)">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 x="0px" y="0px" width="30px"
+                 height="30px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                 xml:space="preserve">
+                        <defs>
+                        </defs>
+                <path class="st0" d="M380.7,256L497,139.7c8.7-8.7,8.7-22.9,0-31.6L403.9,15c-8.7-8.7-22.9-8.7-31.6,0L256,131.3L139.7,15
+	                            c-8.7-8.7-22.9-8.7-31.6,0L15,108.1c-8.7,8.7-8.7,22.9,0,31.6L131.3,256L15,372.3c-8.7,8.7-8.7,22.9,0,31.6l93.1,93.1
+	                            c8.7,8.7,22.9,8.7,31.6,0L256,380.7L372.3,497c8.7,8.7,22.9,8.7,31.6,0l93.1-93.1c8.7-8.7,8.7-22.9,0-31.6L380.7,256z"/>
+                <path class="st1" d="M388.1,512c-7.9,0-15.8-3-21.8-9l-43.8-43.8c-3.3-3.3-3.3-8.7,0-12s8.7-3.3,12,0l43.8,43.8
+	                        c5.4,5.4,14.2,5.4,19.6,0l93.1-93.1c2.6-2.6,4.1-6.1,4.1-9.8c0-3.7-1.4-7.2-4.1-9.8L374.7,262c-3.3-3.3-3.3-8.7,0-12L491,133.7
+	                        c2.6-2.6,4.1-6.1,4.1-9.8s-1.4-7.2-4.1-9.8L397.9,21c-2.6-2.6-6.1-4.1-9.8-4.1c-3.7,0-7.2,1.4-9.8,4.1L262,137.3
+	                        c-1.6,1.6-3.7,2.5-6,2.5s-4.4-0.9-6-2.5l-65.5-65.5c-3.3-3.3-3.3-8.7,0-12c3.3-3.3,8.7-3.3,12,0l59.5,59.5L366.3,9
+                            c5.8-5.8,13.6-9,21.8-9s16,3.2,21.8,9l93.1,93.1c5.8,5.8,9,13.6,9,21.8s-3.2,16-9,21.8L392.7,256L503,366.3c5.8,5.8,9,13.6,9,21.8
+	                        s-3.2,16-9,21.8L409.9,503C403.9,509,396,512,388.1,512z"/>
+                <path class="st1" d="M123.9,512c-8.2,0-16-3.2-21.8-9L9,409.9c-12-12-12-31.6,0-43.6L119.3,256L9,145.7c-12-12-12-31.6,0-43.6
+	                        L102.1,9c5.8-5.8,13.6-9,21.8-9s16,3.2,21.8,9l26.8,26.8c3.3,3.3,3.3,8.7,0,12c-3.3,3.3-8.7,3.3-12,0L133.7,21
+	                          c-2.6-2.6-6.1-4.1-9.8-4.1c-3.7,0-7.2,1.4-9.8,4.1L21,114.1c-5.4,5.4-5.4,14.2,0,19.6L137.3,250c1.6,1.6,2.5,3.7,2.5,6
+	                          c0,2.2-0.9,4.4-2.5,6L21,378.3c-5.4,5.4-5.4,14.2,0,19.6l93.1,93.1c2.6,2.6,6.1,4.1,9.8,4.1c3.7,0,7.2-1.4,9.8-4.1L250,374.7
+	                          c1.6-1.6,3.7-2.5,6-2.5c2.2,0,4.4,0.9,6,2.5l48.5,48.5c3.3,3.3,3.3,8.7,0,12c-3.3,3.3-8.7,3.3-12,0L256,392.7L145.7,503
+	                          C139.9,508.8,132.1,512,123.9,512z"/>
+                    </svg>
+        </div>
+    </div>
+    <h3>Просто оставье нам заявку!</h3>
+    <form action="" class="form" onsubmit="return false;">
+        <input type="text" name="name" class="form__input form__input_gray" placeholder="Имя">
+        <input type="tel" name="telephone" class="form__input form__input_gray" placeholder="Номер" required>
+        <input type="submit" modal="1" class="red-button">
+    </form>
 </div>
 
 //= ./blocks/footer.html
