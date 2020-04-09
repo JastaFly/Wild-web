@@ -466,6 +466,7 @@ input[type="submit"] {
     width: 100%;
     height: auto;
     transition: 0.5s;
+    cursor: pointer;
   }
 
   &__text {
@@ -479,26 +480,7 @@ input[type="submit"] {
     bottom: 10%;
   }
 
-  &:hover .blind {
-    height: 92.5%;
-    background-color: rgba(237, 28, 36, 0.9);
-  }
-
-  &:hover .blind__title {
-    color: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
-  }
-
-  &:hover .blind__col {
-    color: #FFFFFF;
-  }
-
-  &:hover .blind__link {
-    color: #FFFFFF;
-    border-top: 1px solid #FFFFFF;
-  }
-
-  &:hover .black-white {
+  &:hover &__img {
     filter: grayscale(0);
   }
 }
@@ -510,20 +492,21 @@ input[type="submit"] {
 .blind {
   position: absolute;
   z-index: 2;
-  width: 95%;
+  width: 94.7%;
   top: 0;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 6%;
-  height: 0;
-  transition: 0.5s;
+  background-color:rgba(237, 28, 36, 0.8);
+  height: 92.5%;
+  display: none;
 
   &__title {
     font-family: GothamPro;
     font-size: 25px;
     text-align: center;
     border-bottom: 1px solid rgba(237, 28, 36, 0);
-    color: rgba(237, 28, 36, 0);
+    color: white;
     width: 55%;
     margin: 0 auto;
   }
@@ -538,7 +521,7 @@ input[type="submit"] {
   &__col {
     font-family: GothamPro;
     font-size: 20px;
-    color: rgba(237, 28, 36, 0);
+    color: white;
     text-align: center;
     padding-left: 1%;
     padding-right: 1%;
@@ -546,7 +529,7 @@ input[type="submit"] {
   }
 
   &__link {
-    color: rgba(237, 28, 36, 0);
+    color: white;
     font-family: GothamPro;
     font-size: 20px;
     border-top: 1px solid rgba(237, 28, 36, 0);
@@ -555,6 +538,9 @@ input[type="submit"] {
     margin: 0 auto;
     text-align: center;
     padding-top: 5%;
+    &:hover {
+      color: white;
+    }
   }
 }
 
@@ -705,6 +691,9 @@ input[type="submit"] {
 
 
 .team {
+  &:hover &__foto {
+    filter: grayscale(0%);
+  }
   &__name {
     font-family: GothamProBold;
     text-transform: uppercase;
