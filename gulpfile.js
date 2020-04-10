@@ -6,6 +6,8 @@ const reload = browserSync.reload;
 const sass = require('gulp-sass');
 const prefixer = require('gulp-autoprefixer');
 const rigger = require('gulp-rigger');
+const rename = require("gulp-rename");
+
 
 function html() {
     return src('./src/*.html')
@@ -16,7 +18,12 @@ function html() {
 
 function scss() {
     return src('./src/scss/main.scss')
-        .pipe(sass())
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }))
+        .pipe(rename({
+            suffix: '.min'
+        }))
         .pipe(prefixer({
             cascade: false
         }))

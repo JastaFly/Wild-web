@@ -1,9 +1,5 @@
-@media screen and (max-width: 1836px) {
-  .red-bg .big-img img {
-    width: 95%;
-  }
+@media screen and (max-width: 1872px) {
   .red-bg .big-img {
-    left: 5%;
     bottom: 115%;
   }
   .icon_padding-bot {
@@ -168,6 +164,19 @@
     padding-left: 35%;
 
   }
+  header .red-button {
+    padding-top: 0.9%;
+    height: 55px;
+  }
+  .blind {
+    &__col {
+      font-size: 18px;
+    }
+
+    &__link {
+      margin-top: 5%;
+    }
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -313,6 +322,10 @@
       height: auto !important;
     }
   }
+  header .red-button {
+    padding-top: 1%;
+    height: 55px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -334,8 +347,12 @@
   .red-bg .big-img {
     bottom: 60%;
   }
-  .blind__title {
-    width: 70%;
+  .blind {
+    width: 93%;
+
+    &__title {
+      width: 70%;
+    }
   }
   .footer-contacts__contact {
     font-size: 24px;
@@ -343,6 +360,10 @@
   .modal-window {
     width: 45%;
     left: 27%;
+  }
+  header .red-button {
+    padding-top: 1%;
+    height: 55px;
   }
 }
 
@@ -383,6 +404,297 @@
     width: 50%;
     left: 26%;
   }
+  .blind {
+    width: 92%;
+
+    &__title {
+      width: 75%;
+    }
+
+    &__col {
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 117px;
+    height: 61px;
+  }
+  .gray-text {
+    font-size: 14px;
+  }
+  header .red-button {
+    padding-top: 1.7%;
+  }
+  .gray-text:nth-child(2) {
+    margin-top: 5%;
+  }
+  .offer {
+    &__red-text {
+      font-size: 16px;
+    }
+
+    &__container {
+      width: 100%;
+    }
+  }
+  h1 {
+    font-size: 46px;
+  }
+  .row {
+    padding-left: 1%;
+    padding-right: 2%;
+  }
+  .form {
+    &__col {
+      & .red-button {
+        padding-top: 1%;
+      }
+
+      &_wide {
+        flex-basis: 95%;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &_big-brd-rd {
+      border-radius: 50px;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    &_gray-bg {
+      padding-right: 2%;
+      padding-left: 2%;
+      padding-top: 2%;
+    }
+
+    &__input {
+      margin-top: 5%;
+      margin-bottom: 0;
+      padding-left: 0;
+
+      &_white {
+        &::placeholder {
+          text-align: center;
+        }
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    &__little-text {
+      display: inline;
+    }
+  }
+  .offer {
+    &__group {
+      display: block;
+      width: 85%;
+    }
+
+    &__big-text {
+      width: 70%;
+    }
+
+    & .red-button {
+      height: 48px;
+      margin-top: 5%;
+    }
+  }
+  .red-button[type="submit"] {
+    margin-top: 8%;
+  }
+  body {
+    background-image: url("../img/pink-bg-ipad.png");
+  }
+  .icon_padding-bot {
+    padding-bottom: 6.6%;
+  }
+  .red-bg .big-img {
+    bottom: 15%;
+  }
+  .icon {
+    &_padding {
+      padding-top: 19%;
+    }
+
+    &__img {
+      width: 53px;
+
+      &_doc {
+        width: 42px;
+        height: auto;
+      }
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+  .slide {
+    width: 100%;
+  }
+  .owl {
+    &-next {
+      height: 54px !important;
+      width: 54px !important;
+    }
+
+    &-prev {
+      height: 54px !important;
+      width: 54px !important;
+    }
+
+    &-nav {
+      width: 91%;
+      left: 0;
+    }
+
+    &-dots {
+      top: 91%;
+    }
+  }
+  .slide__col:nth-child(1) {
+    margin-right: 4%;
+  }
+  .slide {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 7%;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__mini-title {
+      font-size: 14px;
+    }
+
+    &__price {
+      font-size: 24px;
+    }
+
+    &__img {
+      width: 100% !important;
+      height: auto;
+    }
+  }
+  .row_center .red-button {
+    font-size: 16px;
+    height: 48px;
+    padding-top: 1.5%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .square {
+    &__text {
+      font-size: 12px;
+    }
+  }
+  .blind {
+    width: 88%;
+
+    &__title {
+      font-size: 12px;
+    }
+
+    &__col {
+      font-size: 9px;
+    }
+
+    &__link {
+      font-size: 10px;
+      padding-top: 0;
+    }
+  }
+  .icon__text_font-size-18 {
+    font-size: 14px;
+  }
+  .form__title_red {
+    margin-top: 10%;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .text {
+    &__big {
+      font-size: 14px;
+    }
+
+    &__simple {
+      font-size: 14px;
+    }
+  }
+  .text .red-button {
+    padding-bottom: 4%;
+    padding-top: 4%;
+  }
+  th:first-child {
+    font-size: 24px;
+  }
+  td {
+    font-size: 14px;
+
+    &:first-child {
+      font-size: 14px;
+    }
+  }
+  .table {
+    &-custom__big_bold {
+      font-size: 18px !important;
+    }
+
+    &-custom__total {
+      font-size: 20px !important;
+    }
+
+    &-custom__price {
+      font-size: 18px;
+    }
+  }
+  table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo__img {
+    width: 75px;
+    height: 40px;
+  }
+  header .red-button {
+    padding-top: 0.9%;
+  }
+  .gray-text {
+    font-size: 12px;
+  }
+  .contacts {
+    &__mail {
+      font-size: 14px;
+    }
+
+    &__number {
+      font-size: 16px;
+    }
+  }
+  .time {
+    display: flex;
+  }
 }
 
 @media screen and (max-height: 768px) {
@@ -390,4 +702,5 @@
     top: 10%;
   }
 }
+
 
