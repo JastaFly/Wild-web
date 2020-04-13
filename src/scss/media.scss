@@ -670,6 +670,127 @@
   table {
     width: 100%;
   }
+  .number {
+    margin-right: 3%;
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+  .very-big {
+    padding-right: 3%;
+
+    &__title {
+      font-size: 56px;
+    }
+
+    &__h3 {
+      padding-left: 0;
+    }
+  }
+  .list {
+    padding-left: 3%;
+
+    &__title {
+      font-size: 18px;
+    }
+
+    li {
+      font-size: 14px;
+    }
+
+    .red-button {
+      width: 75%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-size: 16px;
+    }
+  }
+  .team {
+    &__foto {
+      width: auto;
+      height: 60%;
+    }
+  }
+  .red-bg_team {
+    height: 324px;
+  }
+  .slide-two {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    & .owl-nav {
+      width: 93%;
+      left: 0;
+    }
+
+    &__item {
+      width: 232px !important;
+    }
+  }
+  .review {
+    &_center {
+      display: flex;
+      justify-content: center;
+    }
+
+    &_hide {
+      display: none;
+    }
+
+    &__img_left {
+      float: none;
+    }
+
+    &__img {
+      padding-bottom: 5%;
+    }
+
+    &_padding-top {
+      padding-top: 0;
+    }
+  }
+  .menstruation-bg-2 {
+    background-size: cover;
+  }
+  .footer-contacts__contact {
+    font-size: 30px;
+  }
+  footer {
+    padding-bottom: 5%;
+    & h2 {
+      font-size: 19px;
+      margin-top: 7%;
+    }
+
+    & .form {
+      &__mini-text {
+        width: 50%;
+        margin-top: 3%;
+      }
+      &__row {
+        margin-bottom: 0;
+        width: 90%;
+        &:last-child {
+          padding-right: 0;
+        }
+
+        & .form__input:nth-child(2) {
+          margin-left: 2%;
+        }
+      }
+      &__input {
+        margin-top: 2%;
+      }
+    }
+
+    & .red-button[type="submit"] {
+      margin-top: 2%;
+      margin-left: 2%;
+      border-radius: 10px;
+      font-size: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -695,6 +816,7 @@
   .time {
     display: flex;
   }
+
 }
 
 @media screen and (max-height: 768px) {

@@ -9,7 +9,8 @@ $(document).ready(function () {
         items: 1,
         loop: true,
         nav: true,
-        dots: true
+        dots: true,
+        autoplay: true
     });
 
     $(".slide-two").owlCarousel({
@@ -61,11 +62,13 @@ const show_window = function (number) {
     main.style.filter = 'blur(10px)';
     footer.style.filter = 'blur(10px';
 }
+
 const show_bind = function (elem) {
-    let bind = elem.children[2];
-    $(bind).slideToggle();
-    console.log(bind);
+   let bind = elem.children[2];
+    let check = 0;
+        $(bind).slideToggle();
 }
+
 
 const team_hov = function (elem, number) {
     let position_text;
@@ -121,4 +124,25 @@ const team_off = function (elem, number) {
     position.innerHTML = position_text;
     foto.src = './img/' + name + '.png';
     console.log(position);
+}
+const show_cases = function (elem) {
+    let cases = document.getElementsByClassName('cases')[0];
+    let absolut_height = cases.scrollHeight;
+    let persent = 0.5;
+
+    function smooth_height() {
+        let height = absolut_height * persent;
+        if (persent <= 1) {
+            cases.style.height = height + 'px';
+            persent += 0.01;
+            var recursion = setTimeout(smooth_height, 10);
+        }
+        elem.innerHTML = 'Скрыть';
+    }
+
+    smooth_height();
+}
+const show_project = function (elem) {
+    let name = elem.getAttribute('name');
+    console.log(name);
 }

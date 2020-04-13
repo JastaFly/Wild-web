@@ -319,9 +319,9 @@ input[type="submit"] {
   padding-top: 2%;
   padding-left: 2%;
   padding-right: 2%;
-  padding-bottom: 5%;
   border-radius: 20px;
   width: 60%;
+  height: 1000px;
   filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.2));
 
   &__row {
@@ -349,10 +349,6 @@ input[type="submit"] {
     font-size: 18px;
     text-align: justify;
     margin-bottom: 0;
-  }
-
-  &__img {
-    margin-top: -15%;
   }
 
   &__group {
@@ -731,6 +727,12 @@ input[type="submit"] {
 }
 
 .slide-two {
+  &__item {
+    border: 5px solid rgba(0, 0, 0, 0);
+    &:hover {
+      border: 5px solid #fefc54;
+    }
+  }
   padding-left: 15%;
   padding-right: 15%;
 
@@ -879,4 +881,23 @@ input[type="submit"] {
   filter: blur(210px);
   z-index: 4;
   display: none;
+}
+.cases {
+  height: 860px;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+.project {
+  position: absolute;
+  height: 1000px;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  display: none;
+  &__img {
+    object-fit: cover;
+  }
 }
