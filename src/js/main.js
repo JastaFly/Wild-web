@@ -3,6 +3,8 @@ let header = document.getElementsByTagName('header')[0];
 let main = document.getElementsByTagName('main')[0];
 let footer = document.getElementsByTagName('footer')[0];
 let shadow = document.getElementsByClassName('shadow')[0];
+let persent = 0.5;
+let window_number;
 $(document).ready(function () {
     $(".slide-one").owlCarousel({
         margin: 50,
@@ -48,25 +50,33 @@ $(document).ready(function () {
 });
 
 const close_window = function (number) {
-    $(modal[number]).slideToggle();
-    shadow.style.display = 'none';
-    header.style.filter = 'blur(0)';
-    main.style.filter = 'blur(0)';
-    footer.style.filter = 'blur(0)';
+    console.log(window_number);
+    if (window_number == 3) {
+        $('.project').slideToggle();
+        shadow.style.display = 'none';
+        header.style.filter = 'blur(0)';
+        main.style.filter = 'blur(0)';
+        footer.style.filter = 'blur(0)';
+    } else {
+        $(modal[window_number]).slideToggle();
+        shadow.style.display = 'none';
+        header.style.filter = 'blur(0)';
+        main.style.filter = 'blur(0)';
+        footer.style.filter = 'blur(0)';
+    }
 }
 const show_window = function (number) {
-    $(modal[number]).slideToggle();
+    window_number = number;
+    $(modal[window_number]).slideToggle();
     shadow.style.display = 'block';
-    console.log(shadow);
     header.style.filter = 'blur(10px)';
     main.style.filter = 'blur(10px)';
     footer.style.filter = 'blur(10px';
 }
 
 const show_bind = function (elem) {
-   let bind = elem.children[2];
-    let check = 0;
-        $(bind).slideToggle();
+    let bind = elem.children[2];
+    $(bind).slideToggle();
 }
 
 
@@ -95,7 +105,6 @@ const team_hov = function (elem, number) {
     }
     position.innerHTML = position_text;
     foto.src = './img/' + name + '_hov.png';
-    console.log(position);
 }
 
 const team_off = function (elem, number) {
@@ -123,26 +132,45 @@ const team_off = function (elem, number) {
     }
     position.innerHTML = position_text;
     foto.src = './img/' + name + '.png';
-    console.log(position);
 }
 const show_cases = function (elem) {
     let cases = document.getElementsByClassName('cases')[0];
     let absolut_height = cases.scrollHeight;
-    let persent = 0.5;
+    let show = elem.getAttribute('show');
 
     function smooth_height() {
         let height = absolut_height * persent;
-        if (persent <= 1) {
-            cases.style.height = height + 'px';
-            persent += 0.01;
-            var recursion = setTimeout(smooth_height, 10);
+        if (show == 0) {
+            if (persent <= 1) {
+                cases.style.height = height + 'px';
+                persent += 0.03;
+                setTimeout(smooth_height, 10);
+                elem.setAttribute('show', 1);
+                elem.innerHTML = 'Скрыть';
+            }
+        } else if (show == 1) {
+            if (persent >= 0.5) {
+                cases.style.height = height + 'px';
+                persent -= 0.03;
+                setTimeout(smooth_height, 10);
+                elem.setAttribute('show', 0);
+                elem.innerHTML = 'Показать ещё';
+            }
         }
-        elem.innerHTML = 'Скрыть';
     }
 
     smooth_height();
 }
 const show_project = function (elem) {
     let name = elem.getAttribute('name');
-    console.log(name);
+    let project_img = document.getElementsByClassName('project__img')[0];
+    let project_container = document.getElementsByClassName('project')[0];
+    project_img.src = './img/cs-' + name + '.jpg';
+    $(project_container).slideToggle();
+    window_number = 3;
+    header.style.filter = 'blur(10px)';
+    main.style.filter = 'blur(10px)';
+    footer.style.filter = 'blur(10px)';
+    shadow.style.display = 'block';
+    console.log(window_number);
 }

@@ -39,7 +39,7 @@
 
 .offer .red-button {
   flex-basis: 35%;
-  padding-top: 2.5%;
+  padding-top: 2.7%;
   font-size: 16px;
 }
 
@@ -543,6 +543,7 @@ input[type="submit"] {
     text-align: center;
     padding-top: 3%;
     margin-top: 10%;
+    cursor: pointer;
 
     &:hover {
       color: white;
@@ -829,7 +830,6 @@ input[type="submit"] {
   }
 
   &__top {
-    background-color: #ed1c24;
     height: 90px;
     display: flex;
     justify-content: flex-end;
@@ -841,14 +841,20 @@ input[type="submit"] {
 
   &__cross {
     cursor: pointer;
+    & .st0 {
+      fill: #ED050C;
+    }
+    & .st1 {
+      fill: #ED050C;
+    }
 
     &:hover .st0 {
       fill: #ED050C;
     }
 
     &:hover .st1 {
-      fill: #05EDC6;
-    }
+       fill: #05EDC6;
+     }
   }
 
   &__big-text {
@@ -878,9 +884,11 @@ input[type="submit"] {
   height: 100%;
   top: 0;
   left: 0;
-  filter: blur(210px);
   z-index: 4;
+  background: black;
+  opacity: 0.5;
   display: none;
+  cursor: pointer;
 }
 .cases {
   height: 860px;
@@ -888,16 +896,22 @@ input[type="submit"] {
   margin-bottom: 2%;
 }
 .project {
-  position: absolute;
-  height: 1000px;
+  position: fixed;
+  max-height: 100%;
+  width: 100%;
   z-index: 10;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: center;
   overflow-y: scroll;
   display: none;
+  width: 55%;
+  margin-left: 24%;
   &__img {
-    object-fit: cover;
+    width: 100%;
+  }
+  & .modal-window__cross {
+    position: fixed;
+    left: 75%;
+    top: 4%;
   }
 }

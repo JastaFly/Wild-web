@@ -1,9 +1,17 @@
+@media screen and (max-width: 1905px) {
+  .cases {
+    height: 900px;
+  }
+}
 @media screen and (max-width: 1872px) {
   .red-bg .big-img {
     bottom: 115%;
   }
   .icon_padding-bot {
     padding-bottom: 12%;
+  }
+  .cases {
+    height: 850px;
   }
 }
 
@@ -30,6 +38,9 @@
     &__big-text {
       font-size: 22px;
     }
+    .red-button {
+      padding-top: 3%;
+    }
   }
   .icon {
     &__text {
@@ -46,6 +57,9 @@
   .owl-nav {
     width: 65%;
     left: 15%;
+  }
+  .cases {
+    height: 800px;
   }
 }
 
