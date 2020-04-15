@@ -75,7 +75,7 @@ const show_window = function (number) {
 }
 
 const show_bind = function (elem) {
-    let bind = elem.children[2];
+    let bind = elem.children[3];
     $(bind).slideToggle();
 }
 
@@ -99,8 +99,12 @@ const team_hov = function (elem, number) {
             name = 'maks-ageev';
             break;
         case 4:
-            position_text = 'Хуяк, хуяк и в продакшен!';
+            position_text = 'Ебашу прямо в цель!';
             name = 'dima';
+            break;
+        case 5:
+            position_text = 'Хуяк, хуяк и в продакшен!';
+            name = 'i';
             break;
     }
     position.innerHTML = position_text;
@@ -126,8 +130,12 @@ const team_off = function (elem, number) {
             name = 'maks-ageev';
             break;
         case 4:
-            position_text = 'Капитан программист';
+            position_text = 'Директолог';
             name = 'dima';
+            break;
+        case 5:
+            position_text = 'Капитан программист';
+            name = 'i';
             break;
     }
     position.innerHTML = position_text;
