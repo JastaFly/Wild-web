@@ -3,6 +3,7 @@
     height: 900px;
   }
 }
+
 @media screen and (max-width: 1872px) {
   .red-bg .big-img {
     bottom: 115%;
@@ -11,7 +12,7 @@
     padding-bottom: 11%;
   }
   .cases {
-    height: 850px;
+    height: 870px;
   }
 }
 
@@ -38,6 +39,7 @@
     &__big-text {
       font-size: 22px;
     }
+
     .red-button {
       padding-top: 3%;
     }
@@ -46,6 +48,7 @@
     &__text {
       font-size: 14px;
     }
+
     &_padding-bot {
       padding-bottom: 10%;
     }
@@ -93,6 +96,7 @@
     width: 94.3%;
   }
 }
+
 @media screen and (max-width: 1600px) {
   header .red-button {
     padding-top: 1%;
@@ -112,6 +116,7 @@
     left: 12.5%;
   }
 }
+
 @media screen and (max-width: 1583px) {
   .red-bg .big-img {
     left: 2%;
@@ -123,8 +128,10 @@
     &__text {
       font-size: 12px;
     }
+
     &_padding {
       padding-top: 14%;
+
       &-bot {
         padding-bottom: 7%;
       }
@@ -154,6 +161,7 @@
     height: 770px;
   }
 }
+
 @media screen and (max-width: 1536px) {
   .cases {
     height: 750px;
@@ -166,6 +174,7 @@
   }
   .blind {
     width: 94%;
+
     &__link {
       margin-top: 5%;
     }
@@ -201,6 +210,7 @@
     &__name {
       font-size: 16px;
     }
+
     &__position {
       height: 16%;
     }
@@ -236,6 +246,7 @@
   }
   .blind {
     width: 93.5%;
+
     &__col {
       font-size: 18px;
     }
@@ -271,6 +282,7 @@
       width: 41px;
       height: auto;
     }
+
     &_padding-bot {
       padding-bottom: 1%;
     }
@@ -303,6 +315,7 @@
   }
   .slide {
     height: 800px;
+
     &__text {
       font-size: 16px;
     }
@@ -330,6 +343,7 @@
   }
   .blind {
     width: 93.4%;
+
     &__title {
       width: 65%;
     }
@@ -415,6 +429,7 @@
     width: 93.4%;
   }
 }
+
 @media screen and (max-width: 1360px) {
   .offer__big-text {
     padding-top: 12%;
@@ -426,9 +441,11 @@
     &__container {
       width: 70%;
     }
+
     &__group {
       padding-bottom: 24%;
     }
+
     &__big-text {
       padding-top: 11%;
     }
@@ -473,6 +490,9 @@
   .team__position {
     height: 13.2%;
   }
+  .list .red-button {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 1230px) {
@@ -480,12 +500,15 @@
     &__container {
       width: 75%;
     }
+
     &__group {
       padding-bottom: 18%;
+
       & .red-button {
         padding-top: 3%;
       }
     }
+
     &__big-text {
       padding-top: 10%;
     }
@@ -506,6 +529,7 @@
     &__name {
       font-size: 12px;
     }
+
     &__position {
       height: 13.5%;
     }
@@ -565,6 +589,7 @@
   }
   .blind {
     width: 92%;
+
     &__title {
       width: 80%;
     }
@@ -587,10 +612,131 @@
   .offer__group .red-button {
     padding-top: 3.5%;
   }
+  .team {
+    &__foto {
+      height: 60%;
+      width: auto;
+    }
+
+    &__position {
+      font-size: 14px;
+      height: 25.5%;
+    }
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .logo img {
+@media screen and (max-width: 1125px) {
+  .team__position {
+    height: 25.7%;
+  }
+  .blind__link {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .offer__container {
+    width: 95%;
+  }
+  .gray-text {
+    font-size: 16px;
+  }
+  .blind {
+    &__title {
+      width: 85%;
+    }
+
+    &__col {
+      font-size: 12px;
+    }
+
+    &__link {
+      width: 65%;
+    }
+  }
+  .cases {
+    height: 510px;
+  }
+  .very-big__title {
+    font-size: 82px;
+  }
+  .square {
+    &__shadow {
+      width: 91.5%;
+    }
+
+    &__text {
+      font-size: 22px;
+    }
+  }
+  .blind {
+    width: 91.5%;
+  }
+  .very-big__h3 {
+    padding-left: 30%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .red-button {
+    padding-top: 1.5%;
+  }
+  .offer {
+    &__container {
+      width: 100%;
+    }
+
+    &__group {
+      padding-bottom: 15%;
+    }
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .icon_padding {
+    padding-top: 15%;
+  }
+  .slide {
+    width: 95%;
+  }
+  .blind__title {
+    width: 90%;
+  }
+  .cases {
+    height: 490px;
+  }
+  .square__shadow {
+    width: 91%;
+  }
+  .blind {
+    width: 91%;
+
+    &__title {
+      font-size: 24px;
+    }
+  }
+  .list .red-button {
+    width: 45%;
+  }
+  .team {
+    &__position {
+      font-size: 12px;
+      height: 26.3%;
+    }
+
+    &__name {
+      font-size: 10px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .project {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .logo__img {
     width: 117px;
     height: 61px;
   }
@@ -598,7 +744,7 @@
     font-size: 14px;
   }
   header .red-button {
-    padding-top: 1.7%;
+    padding-top: 1.5%;
   }
   .gray-text:nth-child(2) {
     margin-top: 5%;
@@ -696,7 +842,7 @@
   }
   .icon {
     &_padding {
-      padding-top: 19%;
+      padding-top: 15%;
     }
 
     &__img {
@@ -727,7 +873,7 @@
     }
 
     &-nav {
-      width: 91%;
+      width: 93%;
       left: 0;
     }
 
@@ -777,9 +923,13 @@
     &__text {
       font-size: 12px;
     }
+    &__shadow {
+      width: 90.5%;
+    }
   }
   .blind {
-    width: 88%;
+    padding-top: 10%;
+    width: 90.5%;
 
     &__title {
       font-size: 12px;
@@ -793,6 +943,9 @@
       font-size: 10px;
       padding-top: 0;
     }
+  }
+  .cases {
+    height: 460px;
   }
   .icon__text_font-size-18 {
     font-size: 14px;
@@ -879,6 +1032,9 @@
     }
   }
   .team {
+    &__position {
+      height: 16.4%;
+    }
     &__foto {
       width: auto;
       height: 60%;
@@ -905,6 +1061,13 @@
       display: flex;
       justify-content: center;
     }
+    &__img {
+      display: block;
+      margin: 0 auto;
+    }
+    &_show {
+      display: block;
+    }
 
     &_hide {
       display: none;
@@ -930,6 +1093,7 @@
   }
   footer {
     padding-bottom: 5%;
+
     & h2 {
       font-size: 19px;
       margin-top: 7%;
@@ -940,9 +1104,11 @@
         width: 50%;
         margin-top: 3%;
       }
+
       &__row {
         margin-bottom: 0;
         width: 90%;
+
         &:last-child {
           padding-right: 0;
         }
@@ -951,6 +1117,7 @@
           margin-left: 2%;
         }
       }
+
       &__input {
         margin-top: 2%;
       }
@@ -963,9 +1130,131 @@
       font-size: 20px;
     }
   }
+  .row_center .red-button {
+    padding-top: 1.2%;
+  }
+  .text {
+    &__container {
+      display: block;
+    }
+    &__simple {
+      padding-bottom: 0;
+    }
+    &__img {
+      margin-bottom: 10%;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .cases {
+    height: 430px;
+  }
+  .square__shadow {
+    width: 90%;
+  }
+  .blind {
+    width: 90%;
+  }
+  .team {
+    &__name {
+      font-size: 8px;
+    }
+    &__position {
+      font-size: 10px;
+      height: 10%;
+    }
+    &__foto {
+      height: 55%;
+    }
+  }
+  .red-bg_team {
+    height: 276px;
+  }
+}
+@media screen and (max-width: 801px) {
+  .owl-nav {
+    width: 92%;
+  }
+  .slide {
+    height: 750px;
+  }
+  .square__shadow {
+    width: 89%;
+  }
+  .blind {
+    width: 89%;
+  }
+  .cases {
+    height: 380px;
+  }
+  .team__foto {
+    height: 50%;
+  }
+  .red-bg_team {
+    height: 257px;
+  }
+  .review__img_width {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text .red-button {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .icon {
+    &_padding {
+      padding-top: 19%;
+    }
+  }
+  .owl-nav {
+    width: 91%;
+  }
+  .square__shadow {
+    width: 88%;
+  }
+  .blind {
+    width: 88%;
+    padding-top: 5%;
+  }
+  header .red-button {
+    padding-top: 1.7%;
+  }
+  .row_center .red-button {
+    padding-top: 1.5%;
+  }
+  .slide__price {
+    font-size: 22px;
+    &_bold {
+      font-size: 22px;
+    }
+  }
+  .slide {
+    height: 710px;
+  }
+  .cases {
+    height: 360px;
+  }
+  .team__foto {
+    height: 45%;
+  }
+  .red-bg_team {
+    height: 249px;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  body {
+    background-image: url("../img/pink-bg-mobile.png");
+  }
+  header {
+    padding-bottom: 10%;
+  }
+  h2 {
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
   .logo__img {
     width: 75px;
     height: 40px;
@@ -988,8 +1277,282 @@
   .time {
     display: flex;
   }
+  .gray-text:nth-child(2) {
+    margin-top: 0;
+  }
+  .offer {
+    &__red-text {
+      font-size: 14px;
+    }
+    &__big-text {
+      font-size: 14px;
+      padding-top: 0;
+    }
+    &__mimi-text {
+      font-size: 14px;
+    }
+    .red-button {
+      padding-top: 5.5%;
+    }
+  }
+  .row {
+    padding-right: 2%;
+    padding-left: 2%;
+    &_sp-around .big-img {
+      padding-top: 10%;
+      padding-bottom: 10%;
+    }
+  }
+  .red-button {
+    &[type="submit"] {
+      padding-bottom: 5%;
+      padding-top: 5%;
+    }
+    &_padding {
+      width: 80%;
+      margin-top: 10%;
+    }
+  }
+  .row_center .red-button {
+    padding-top: 3%;
+  }
+  .icon {
+    flex-basis: 100%;
+    &__text {
+      font-size: 16px;
+    }
+    &__text_width_70 {
+      width: 100%;
+    }
+    &_padding {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+    &__img_doc {
+      margin-right: 10%;
+    }
+    &-group {
+      display: block;
+      & .icon {
+        padding-bottom: 10%;
+      }
+    }
+  }
+  .red-bg {
+    height: 600px;
+    & .big-img {
+      bottom: 5%;
+    }
+  }
+  .time {
+    padding-top: 5%;
+  }
+  .contacts {
+    padding-top: 5%;
+  }
+  .logo__img {
+    width: 75px;
+  }
+  .form {
+    padding-left: 5%;
+    padding-right: 5%;
+    &__col .form__mini-text_gray {
+      padding-bottom: 5%;
+    }
+    &_gray-bg {
+      width: 90%;
+      margin: 0 auto;
+    }
+    &__input {
+      padding-top: 4%;
+      padding-bottom: 4%;
+    }
+    &__title_red {
+      font-size: 18px;
+    }
+    &_white-bg {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    &_big-brd-rd {
+      display: block;
+    }
+    &__little-text {
+      font-size: 14px;
+    }
+    & h2 {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  .icon_padding-bot:last-child {
+    padding-bottom: 15%;
+  }
 
+  .red-bg_height-300 .col-md-3 {
+    height: 150px;
+    position: relative;
+    bottom: 5%;
+  }
+  .slide {
+    height: 1220px;
+    &__row {
+      display: block;
+    }
+    &__title {
+      padding-top: 5%;
+      padding-bottom: 5%;
+      margin-bottom: 0;
+    }
+    &__mini-title {
+      width: 90%;
+    }
+    &__couple:first-child {
+      padding-right: 3%;
+    }
+    &__price {
+      font-size: 20px;
+      &_bold {
+        font-size: 18px;
+      }
+    }
+    &__img {
+      margin-left: 2%;
+    }
+    &__group {
+      &:last-child {
+        border-top: 1px solid #d3d3d3;
+        padding-top: 5%;
+      }
+      &_line {
+        border-bottom: none;
+      }
+    }
+  }
+  .owl {
+    &-dots {
+      left: 31%;
+      top: 91.5%;
+    }
+    &-nav {
+      width: 70%;
+      bottom: 10%;
+      left: 4%;
+    }
+    &-item {
+      height: 1250px;
+    }
+  }
+  .square {
+    padding-bottom: 5%;
+    &__shadow {
+      width: 90.2%;
+      height: 94.2%;
+    }
+  }
+  .blind {
+    width: 90.2%;
+    height: 94.2%;
+    &__title {
+      font-size: 14px;
+      padding-bottom: 4%;
+    }
+    &__col {
+      font-size: 12px;
+    }
+    &__link {
+      font-size: 14px;
+      padding-top: 3%;
+    }
+  }
+  .cases {
+    height: 450px;
+  }
+  .menstruation-bg {
+    background: radial-gradient(circle, rgba(244,214,216,1) 0%, rgba(235,174,176,0) 100%);
+  }
+  .text {
+    &__big {
+      font-size: 16px;
+    }
+    &__img {
+      width: 45%
+    }
+    &__container {
+      justify-content: center;
+    }
+  }
+  .text {
+    .red-button {
+      font-size: 14px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .mobile-none {
+    display: none;
+  }
+  tr {
+    &:nth-child(1) {
+      border-bottom: 1px solid #b8b8b8;
+    }
+    &:nth-child(2) {
+      border-bottom: none;
+    }
+  }
+  th {
+    color: #404041;
+    font-size: 14px;
+    font-family: GothamPro;
+    text-transform: none;
+    padding-left: 3%;
+    vertical-align: top;
+    &:first-child {
+      width: 5%;
+    }
+  }
+  tr {
+    &:nth-child(2) {
+      height: 50px;
+      & td {
+        padding-bottom: 0;
+      }
+    }
+  }
+  td {
+    padding-bottom: 5%;
+    &:first-child {
+      width: 5%;
+    }
+  }
+  .table {
+    &-custom {
+      &__big_bold {
+        font-size: 14px !important;
+      }
+      &__total {
+        font-size: 16px !important;
+        vertical-align: center;
+      }
+      &__price {
+        vertical-align: center;
+      }
+    }
+    &__red {
+      color: #ed1c24;
+      font-family: GothamProBold;
+      font-size: 16px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+  }
+  .mobile-on {
+    display: block;
+  }
 }
+
 @media screen and (min-width: 2048px) {
   header .red-button {
     padding-top: 0.7%;
@@ -1008,6 +1571,7 @@
     width: 95.3%;
   }
 }
+
 @media screen and (min-width: 2560px) {
   .offer .red-button {
     padding-top: 2.1%;
