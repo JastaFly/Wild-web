@@ -17,10 +17,22 @@ $(document).ready(function () {
 
     $(".slide-two").owlCarousel({
         margin: 20,
-        items: 5,
+        items: 1,
         loop: true,
         nav: true,
-        autoWidth: true
+        autoplay: true
+    });
+    $(".slider-team").owlCarousel({
+        margin: 20,
+        items: 1,
+        loop: true,
+        autoplay: true
+    });
+    $(".review-slider").owlCarousel({
+        margin: 20,
+        items: 1,
+        loop: true,
+        autoplay: true
     });
 
     $('.form').submit(function () {

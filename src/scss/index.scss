@@ -746,25 +746,7 @@ input[type="submit"] {
 }
 
 .slide-two {
-  &__item {
-    border: 5px solid rgba(0, 0, 0, 0);
-    &:hover {
-      border: 5px solid #fefc54;
-    }
-  }
-  padding-left: 15%;
-  padding-right: 15%;
-
-  & .owl-stage-outer {
-    z-index: 2;
-  }
-
-  & .owl-nav {
-    width: 80%;
-    left: 8%;
-    top: 25%;
-    z-index: 1;
-  }
+  display: none !important;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
@@ -940,5 +922,5 @@ input[type="submit"] {
   }
 }
 .mobile-on {
-  display: none;
+  display: none !important;
 }
