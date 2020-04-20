@@ -470,8 +470,9 @@ input[type="submit"] {
     cursor: pointer;
 
   }
+
   &__shadow {
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,212,255,0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 212, 255, 0) 100%);
     position: absolute;
     z-index: 2;
     width: 94.9%;
@@ -570,10 +571,12 @@ input[type="submit"] {
     display: flex;
     align-items: flex-start;
   }
+
   &__img {
     margin-left: 2%;
     object-fit: contain;
   }
+
   &__big {
     text-transform: uppercase;
     font-size: 18px;
@@ -765,6 +768,7 @@ input[type="submit"] {
   &_show {
     display: none;
   }
+
   &_padding-top {
     padding-top: 5%;
   }
@@ -773,6 +777,7 @@ input[type="submit"] {
     padding-bottom: 10%;
     max-width: 100%;
     height: auto;
+
     &_padding {
       padding-bottom: 5%;
       padding-left: 5%;
@@ -847,9 +852,11 @@ input[type="submit"] {
 
   &__cross {
     cursor: pointer;
+
     & .st0 {
       fill: #ED050C;
     }
+
     & .st1 {
       fill: #ED050C;
     }
@@ -859,8 +866,8 @@ input[type="submit"] {
     }
 
     &:hover .st1 {
-       fill: #05EDC6;
-     }
+      fill: #05EDC6;
+    }
   }
 
   &__big-text {
@@ -896,11 +903,13 @@ input[type="submit"] {
   display: none;
   cursor: pointer;
 }
+
 .cases {
   height: 900px;
   overflow: hidden;
   margin-bottom: 2%;
 }
+
 .project {
   position: fixed;
   max-height: 100%;
@@ -912,15 +921,18 @@ input[type="submit"] {
   display: none;
   width: 55%;
   margin-left: 24%;
+
   &__img {
     width: 100%;
   }
+
   & .modal-window__cross {
     position: fixed;
     left: 75%;
     top: 4%;
   }
 }
+
 .mobile-on {
   display: none !important;
 }

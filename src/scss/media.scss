@@ -617,6 +617,7 @@
     }
   }
 }
+
 @media screen and (max-width: 1194px) {
   header {
     padding-bottom: 7%;
@@ -682,8 +683,9 @@
 }
 
 @media screen and (max-width: 1024px) {
-  header  {
+  header {
     padding-bottom: 4%;
+
     .red-button {
       padding-top: 1.5%;
     }
@@ -692,6 +694,7 @@
     &__big-text {
       padding-top: 5%;
     }
+
     &__container {
       width: 100%;
     }
@@ -936,6 +939,7 @@
     &__text {
       font-size: 12px;
     }
+
     &__shadow {
       width: 90.5%;
     }
@@ -1048,6 +1052,7 @@
     &__position {
       height: 16.4%;
     }
+
     &__foto {
       width: auto;
       height: 60%;
@@ -1061,10 +1066,12 @@
       display: flex;
       justify-content: center;
     }
+
     &__img {
       display: block;
       margin: 0 auto;
     }
+
     &_show {
       display: block;
     }
@@ -1137,14 +1144,17 @@
     &__container {
       display: block;
     }
+
     &__simple {
       padding-bottom: 0;
     }
+
     &__img {
       margin-bottom: 10%;
     }
   }
 }
+
 @media screen and (max-width: 900px) {
   .cases {
     height: 430px;
@@ -1159,10 +1169,12 @@
     &__name {
       font-size: 8px;
     }
+
     &__position {
       font-size: 10px;
       height: 10%;
     }
+
     &__foto {
       height: 55%;
     }
@@ -1171,6 +1183,7 @@
     height: 276px;
   }
 }
+
 @media screen and (max-width: 834px) {
   .cases {
     height: 400px;
@@ -1191,6 +1204,7 @@
     height: 258px;
   }
 }
+
 @media screen and (max-width: 834px) {
   .cases {
     height: 380px;
@@ -1199,6 +1213,7 @@
     padding-left: 4%;
   }
 }
+
 @media screen and (max-width: 801px) {
   .cases {
     height: 380px;
@@ -1245,6 +1260,7 @@
   }
   .slide__price {
     font-size: 22px;
+
     &_bold {
       font-size: 22px;
     }
@@ -1259,6 +1275,7 @@
     &__position {
       height: 10.3%;
     }
+
     &__foto {
       height: 45%;
     }
@@ -1267,6 +1284,7 @@
     height: 249px;
   }
 }
+
 @media screen and (max-width: 736px) {
   .team {
     &__name {
@@ -1277,28 +1295,34 @@
     height: 244px;
   }
 }
+
 @media screen and (max-width: 736px) {
   .cases {
     height: 340px;
   }
 }
+
 @media screen and (max-width: 667px) {
   .offer {
     & h1 {
       font-size: 42px;
     }
+
     &__big-text {
       font-size: 18px;
     }
+
     &__mimi-text {
       font-size: 18px;
     }
+
     & .red-button {
       padding-top: 4%;
     }
   }
   header {
     padding-bottom: 3%;
+
     & .red-button {
       padding-top: 2.2%;
     }
@@ -1322,6 +1346,7 @@
   .blind {
     width: 86%;
     height: 92%;
+
     &__col {
       font-size: 8px;
     }
@@ -1351,6 +1376,9 @@
         width: 45%;
       }
     }
+  }
+  .table-custom__price {
+    font-size: 16px;
   }
 }
 
@@ -1395,13 +1423,16 @@
     &__red-text {
       font-size: 14px;
     }
+
     &__big-text {
       font-size: 14px;
       padding-top: 0;
     }
+
     &__mimi-text {
       font-size: 14px;
     }
+
     .red-button {
       padding-top: 5.5%;
     }
@@ -1409,6 +1440,7 @@
   .row {
     padding-right: 2%;
     padding-left: 2%;
+
     &_sp-around .big-img {
       padding-top: 10%;
       padding-bottom: 10%;
@@ -1419,6 +1451,7 @@
       padding-bottom: 5%;
       padding-top: 5%;
     }
+
     &_padding {
       width: 80%;
       margin-top: 10%;
@@ -1429,21 +1462,27 @@
   }
   .icon {
     flex-basis: 100%;
+
     &__text {
       font-size: 16px;
     }
+
     &__text_width_70 {
       width: 100%;
     }
+
     &_padding {
       padding-top: 5%;
       padding-bottom: 5%;
     }
+
     &__img_doc {
       margin-right: 10%;
     }
+
     &-group {
       display: block;
+
       & .icon {
         padding-bottom: 10%;
       }
@@ -1451,9 +1490,11 @@
   }
   .red-bg {
     height: 600px;
+
     & .big-img {
       bottom: 5%;
     }
+
     &_team {
       height: 410px;
     }
@@ -1470,44 +1511,56 @@
   .form {
     &__row {
       display: block;
+
       & .form__input {
         width: 100%;
         padding-left: 0;
         margin-bottom: 5%;
+
         &::placeholder {
           text-align: center;
         }
       }
     }
+
     padding-left: 5%;
     padding-right: 5%;
+
     &__col .form__mini-text_gray {
       padding-bottom: 5%;
     }
+
     &_gray-bg {
       width: 90%;
       margin: 0 auto;
     }
+
     &__input {
       padding-top: 4%;
       padding-bottom: 4%;
     }
+
     &__title_red {
       font-size: 18px;
     }
+
     &_white-bg {
       padding-left: 10%;
       padding-right: 10%;
     }
+
     &_big-brd-rd {
       display: block;
     }
+
     &__little-text {
       font-size: 14px;
     }
+
     & h2 {
       text-align: center;
     }
+
     &__text {
       text-align: center;
     }
@@ -1523,34 +1576,43 @@
   }
   .slide {
     height: 1220px;
+
     &__row {
       display: block;
     }
+
     &__title {
       padding-top: 5%;
       padding-bottom: 5%;
       margin-bottom: 0;
     }
+
     &__mini-title {
       width: 90%;
     }
+
     &__couple:first-child {
       padding-right: 3%;
     }
+
     &__price {
       font-size: 20px;
+
       &_bold {
         font-size: 18px;
       }
     }
+
     &__img {
       margin-left: 2%;
     }
+
     &__group {
       &:last-child {
         border-top: 1px solid #d3d3d3;
         padding-top: 5%;
       }
+
       &_line {
         border-bottom: none;
       }
@@ -1566,6 +1628,7 @@
       left: 31%;
       top: 91.5%;
     }
+
     &-nav {
       width: 70%;
       bottom: 10%;
@@ -1574,6 +1637,7 @@
   }
   .square {
     padding-bottom: 5%;
+
     &__shadow {
       width: 90.2%;
       height: 94.2%;
@@ -1582,13 +1646,16 @@
   .blind {
     width: 90.2%;
     height: 94.2%;
+
     &__title {
       font-size: 14px;
       padding-bottom: 4%;
     }
+
     &__col {
       font-size: 12px;
     }
+
     &__link {
       font-size: 14px;
       padding-top: 3%;
@@ -1598,15 +1665,17 @@
     height: 450px;
   }
   .menstruation-bg {
-    background: radial-gradient(circle, rgba(244,214,216,1) 0%, rgba(235,174,176,0) 100%);
+    background: radial-gradient(circle, rgba(244, 214, 216, 1) 0%, rgba(235, 174, 176, 0) 100%);
   }
   .text {
     &__big {
       font-size: 16px;
     }
+
     &__img {
       width: 45%
     }
+
     &__container {
       justify-content: center;
     }
@@ -1625,6 +1694,7 @@
     &:nth-child(1) {
       border-bottom: 1px solid #b8b8b8;
     }
+
     &:nth-child(2) {
       border-bottom: none;
     }
@@ -1636,6 +1706,7 @@
     text-transform: none;
     padding-left: 3%;
     vertical-align: top;
+
     &:first-child {
       width: 5%;
     }
@@ -1643,6 +1714,7 @@
   tr {
     &:nth-child(2) {
       height: 50px;
+
       & td {
         padding-bottom: 0;
       }
@@ -1650,6 +1722,7 @@
   }
   td {
     padding-bottom: 5%;
+
     &:first-child {
       width: 5%;
     }
@@ -1659,19 +1732,23 @@
       &__big_bold {
         font-size: 14px !important;
       }
+
       &__total {
         font-size: 16px !important;
         vertical-align: center;
       }
+
       &__price {
         vertical-align: center;
         font-size: 16px;
       }
+
       &__dot {
         height: 20px;
         width: 20px;
       }
     }
+
     &__red {
       color: #ed1c24;
       font-family: GothamProBold;
@@ -1689,17 +1766,21 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 3%;
+
     &__top {
       height: 50px;
     }
+
     & input {
       width: 100%;
       padding-top: 3%;
       padding-bottom: 3%;
     }
+
     & h3 {
       font-size: 18px;
     }
+
     & input[type=submit] {
       padding-top: 4%;
       padding-bottom: 4%;
@@ -1708,6 +1789,7 @@
   .slide-two {
     display: block !important;
     margin-top: 20%;
+
     & .owl-nav {
       top: -3%;
     }
@@ -1736,51 +1818,62 @@
     border: none;
     border-bottom: 2px solid #b8b8b8;
     padding-bottom: 5%;
+
     &__title {
       font-size: 40px;
       text-align: center;
     }
+
     &__h3 {
       text-align: center;
     }
   }
   .list {
     padding-top: 5%;
+
     &__title {
       font-size: 16px;
       text-align: center;
     }
+
     & ul {
       padding-inline-start: 0;
       margin-left: 10%;
     }
+
     & li {
       font-size: 35px;
       margin-top: 0;
       margin-bottom: 0;
       line-height: 20px;
     }
+
     & li span {
       font-size: 14px;
       position: relative;
       top: -6px;
     }
+
     .red-button {
       margin: 0 auto;
     }
   }
   .team {
     padding-top: 13.5%;
+
     &__name {
       font-size: 18px;
     }
+
     &__position {
       font-size: 20px;
       height: 60px;
     }
+
     &__foto_container {
       height: 252px
     }
+
     &__foto {
       height: 100% !important;
       width: auto !important;
@@ -1788,15 +1881,18 @@
   }
   .footer-contacts {
     display: block;
+
     &__icon {
       display: block;
       margin: 0 auto;
     }
+
     &__icon-container {
       margin-right: 0;
       margin-top: 5%;
       margin-bottom: 5%;
     }
+
     &__contact {
       width: 100%;
       font-size: 24px;
@@ -1808,17 +1904,21 @@
     & h2 {
       font-size: 18px;
     }
+
     & .form__row {
       width: 100%;
+
       & .form__input:nth-child(2) {
         margin-left: 0;
       }
     }
+
     & .red-button[type="submit"] {
       width: 80%;
       margin: 0 auto;
       display: block;
     }
+
     & .form__mini-text {
       width: 100%;
     }
