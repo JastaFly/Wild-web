@@ -16,14 +16,12 @@ $(document).ready(function () {
     });
 
     $(".slide-two").owlCarousel({
-        margin: 20,
         items: 1,
         loop: true,
         nav: true,
         autoplay: true
     });
     $(".slider-team").owlCarousel({
-        margin: 20,
         items: 1,
         loop: true,
         autoplay: true
@@ -160,6 +158,14 @@ const show_cases = function (elem) {
 
     function smooth_height() {
         let height = absolut_height * persent;
+        let device_screen = screen.width;
+        let cases_height;
+        if (device_screen <= 576) {
+            cases_height = 0.14;
+        }
+        else {
+            cases_height = 0.5;
+        }
         if (show == 0) {
             if (persent <= 1) {
                 cases.style.height = height + 'px';
@@ -169,7 +175,7 @@ const show_cases = function (elem) {
                 elem.innerHTML = 'Скрыть';
             }
         } else if (show == 1) {
-            if (persent >= 0.5) {
+            if (persent >= cases_height) {
                 cases.style.height = height + 'px';
                 persent -= 0.03;
                 setTimeout(smooth_height, 10);
