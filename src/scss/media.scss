@@ -45,12 +45,9 @@
     }
   }
   .icon {
-    &__text {
-      font-size: 14px;
-    }
 
     &_padding-bot {
-      padding-bottom: 10%;
+      padding-bottom: 8%;
     }
   }
   .row {
@@ -115,6 +112,9 @@
     width: 70%;
     left: 12.5%;
   }
+  .offer__group {
+    padding-bottom: 20%;
+  }
 }
 
 @media screen and (max-width: 1583px) {
@@ -125,15 +125,15 @@
     padding-top: 1%;
   }
   .icon {
-    &__text {
-      font-size: 12px;
-    }
 
     &_padding {
       padding-top: 14%;
 
       &-bot {
         padding-bottom: 7%;
+        & .icon__text {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -264,6 +264,9 @@
   .square__shadow {
     width: 93.5%;
   }
+  .red-button:after {
+    margin-top: -20%;
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -282,17 +285,22 @@
       width: 41px;
       height: auto;
     }
+    &__text {
+      font-size: 14px;
+    }
 
     &_padding-bot {
-      padding-bottom: 1%;
+      padding-bottom: 0;
     }
   }
-  .red-bg .big-img {
-    left: 1%;
-    padding-left: 3%;
-  }
-  .red-bg .big-img img {
-    width: 85%;
+  .red-bg {
+    & .big-img {
+      left: 1%;
+      padding-left: 3%;
+    }
+    & .big-img img {
+      width: 85%;
+    }
   }
   .red-bg_height-300 {
     height: 250px;
@@ -427,6 +435,17 @@
   .offer__big-text {
     padding-top: 12%;
   }
+  .offer__group {
+    padding-bottom: 25%;
+  }
+  .icon_padding-bot {
+    & .icon__text {
+      font-size: 12px;
+    }
+  }
+  header {
+    padding-bottom: 8%;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -442,9 +461,6 @@
     &__big-text {
       padding-top: 11%;
     }
-  }
-  .icon__text {
-    font-size: 10px;
   }
   .big-text {
     font-size: 16px;
@@ -481,10 +497,13 @@
     width: 93%;
   }
   .team__position {
-    height: 13.2%;
+    height: 13.5%;
   }
   .list .red-button {
     width: 40%;
+  }
+  header {
+    padding-bottom: 6%;
   }
 }
 
@@ -505,9 +524,6 @@
     &__big-text {
       padding-top: 10%;
     }
-  }
-  .icon__text {
-    font-size: 8px;
   }
   .red-bg_height-300 {
     height: 225px;
@@ -568,10 +584,21 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 1194px) {
+  header {
+    padding-bottom: 3%;
+  }
+  .red-bg .big-img {
+    bottom: 30%;
+  }
+  .offer__group .red-button {
+    padding-top: 3.5%;
+  }
+}
 
 @media screen and (max-width: 1136px) {
   header {
-    padding-bottom: 3%;
+    padding-bottom: 2%;
   }
   .slide {
     width: 85%;
@@ -602,8 +629,10 @@
   .cases {
     height: 550px;
   }
-  .offer__group .red-button {
-    padding-top: 3.5%;
+  .offer__group {
+    & .red-button {
+      padding-top: 3.5%;
+    }
   }
   .team {
     &__foto {
@@ -613,29 +642,48 @@
 
     &__position {
       font-size: 14px;
-      height: 25.5%;
+      height: 25.7%;
     }
   }
+  .row_center .red-button {
+    flex-basis: 20%;
+  }
+  .red-button:after {
+    margin-top: -20%;
+    height: 200px;
+  }
 }
 
-@media screen and (max-width: 1194px) {
-  header {
-    padding-bottom: 7%;
-  }
-  .red-bg .big-img {
-    bottom: 30%;
-  }
-  .offer__group .red-button {
-    padding-top: 3.5%;
-  }
-}
 
 @media screen and (max-width: 1125px) {
+  header {
+    padding-bottom: 1%;
+  }
   .team__position {
-    height: 25.7%;
+    height: 25.6%;
   }
   .blind__link {
     width: 60%;
+  }
+  .cases {
+    height: 540px;
+  }
+}
+@media screen and (max-width: 1102px) {
+  .gray-text {
+    font-size: 16px;
+  }
+  .offer__red-text {
+    font-size: 18px;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .cases {
+    height: 530px;
+  }
+  .very-big__title {
+    font-size: 82px;
   }
 }
 
@@ -684,7 +732,7 @@
 
 @media screen and (max-width: 1024px) {
   header {
-    padding-bottom: 4%;
+    padding-bottom: 1%;
 
     .red-button {
       padding-top: 1.5%;
@@ -704,7 +752,7 @@
     }
   }
   .form__title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .icon_padding {
     padding-top: 15%;
@@ -784,7 +832,7 @@
   .form {
     &__col {
       & .red-button {
-        padding-top: 1%;
+        padding-top: 5%;
       }
 
       &_wide {
@@ -827,6 +875,9 @@
 
     &__little-text {
       display: inline;
+    }
+    & .red-button {
+      margin-top: 5%;
     }
   }
   .offer {
@@ -1183,6 +1234,17 @@
     height: 276px;
   }
 }
+@media screen and (max-width: 855px) {
+  .row_center .red-button {
+    flex-basis: 30%;
+  }
+  .cases {
+    height: 410px;
+  }
+  .red-bg_team {
+    height: 275px;
+  }
+}
 
 @media screen and (max-width: 834px) {
   .cases {
@@ -1212,6 +1274,9 @@
   .review__img {
     padding-left: 4%;
   }
+}
+@media screen and (max-width: 834px) {
+
 }
 
 @media screen and (max-width: 801px) {
@@ -1273,7 +1338,7 @@
   }
   .team {
     &__position {
-      height: 10.3%;
+      height: 10.1%;
     }
 
     &__foto {
@@ -1299,6 +1364,12 @@
 @media screen and (max-width: 736px) {
   .cases {
     height: 340px;
+  }
+  .team__position {
+    height: 10.3%;
+  }
+  .row_center .red-button {
+    flex-basis: 35%;
   }
 }
 
@@ -2251,7 +2322,7 @@
     padding-top: 7%;
   }
   .red-bg .big-img {
-    bottom: 170%;
+    bottom: 155%;
   }
   .slide {
     height: 1200px;
@@ -2277,6 +2348,11 @@
   }
   .owl-nav {
     left: 18.5%;
+  }
+  .red-button {
+    &:after {
+      margin-top: -10%;
+    }
   }
 }
 
