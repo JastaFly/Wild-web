@@ -45,6 +45,9 @@ h3 {
   font-family: GothamProBold;
   font-size: 30px;
 }
+a {
+  text-decoration: none !important;
+}
 
 header {
   padding-bottom: 9%;
@@ -143,4 +146,20 @@ td {
   &:last-child {
     border-right: none;
   }
+}
+
+.cl0 {
+  fill: #E32F36;
+}
+
+.cl1 {
+  fill: #FFFFFF;
+}
+
+.up0 {
+  fill: #E32F36;
+}
+
+.up1 {
+  fill: #FFFFFF;
 }

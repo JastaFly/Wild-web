@@ -67,10 +67,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 5%;
+    &:nth-child(2) {
+      margin-bottom: 0;
+    }
 
     &:last-child {
       justify-content: flex-end;
       padding-right: 2%;
+      & .form__mini-text {
+        flex-basis: 45%;
+        margin-top: 2%;
+      }
     }
 
     &__mini-text {
@@ -89,9 +96,9 @@
       text-align: left;
       padding-left: 4%;
       margin-bottom: 0;
+      flex-basis: 48%;
 
-      &:nth-child(2) {
-        margin-left: 4%;
+      & .red-button {
       }
     }
   }
@@ -313,13 +320,14 @@ input[type="submit"] {
 .slide {
   margin: 0 auto;
   background-color: white;
-  padding-top: 2%;
+  padding-top: 1%;
   padding-left: 2%;
   padding-right: 2%;
   border-radius: 20px;
   width: 60%;
-  height: 1000px;
+  height: 1050px;
   filter: drop-shadow(0 15px 15px rgba(0, 0, 0, 0.2));
+  overflow: hidden;
 
   &__row {
     display: flex;
@@ -338,6 +346,19 @@ input[type="submit"] {
     color: #ed1c24;
     font-size: 20px;
     font-family: GothamProBold;
+
+    &_gray {
+      text-transform: none;
+      color: #404041;
+    }
+    &_bot-border {
+      border-bottom: #c8c8c8 solid 1px;
+      width: 110%;
+      position: relative;
+      left: -3.5%;
+      padding-left: 3%;
+      padding-bottom: 1%;
+    }
   }
 
   &__text {
@@ -944,4 +965,68 @@ input[type="submit"] {
   left: 40%;
   z-index: 16;
   margin-top: 13%;
+}
+.callback {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 80%;
+  right: 5%;
+  z-index: 20;
+  cursor: pointer;
+  animation: wave linear 1s infinite;
+  border-radius: 50%;
+  background-color: #ed1c24;
+  &:hover &__text {
+    display: block;
+  }
+  &:hover &__img {
+    display: none;
+  }
+  &__img {
+    animation: shake linear 1s infinite;
+  }
+  &__text {
+    position: relative;
+    color: white;
+    top: 33%;
+    left: 1%;
+    font-family: GothamPro;
+    z-index: 21;
+    text-align: center;
+    font-size: 8px;
+    line-height: 120%;
+    display: none;
+  }
+}
+.up {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  z-index: 20;
+  border-radius: 50%;
+  background-color: #ed1c24;
+  &:hover &__text {
+    display: block;
+  }
+  &:hover &__img {
+    display: none;
+  }
+  &__text {
+    position: relative;
+    color: white;
+    top: 38%;
+    left: 1%;
+    font-family: GothamPro;
+    z-index: 21;
+    text-align: center;
+    font-size: 12px;
+    line-height: 120%;
+    display: none;
+  }
+}
+.row_center .red-button {
+  flex-basis: 15%;
 }

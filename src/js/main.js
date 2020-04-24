@@ -12,7 +12,8 @@ $(document).ready(function () {
         loop: true,
         nav: true,
         dots: true,
-        autoplay: true
+        autoplay: true,
+        autoplayTimeout: 25000
     });
 
     $(".slide-two").owlCarousel({
@@ -161,10 +162,10 @@ const show_cases = function (elem) {
         let device_screen = screen.width;
         let cases_height;
         if (device_screen <= 576) {
-            cases_height = 0.14;
+            cases_height = 0.2;
         }
         else {
-            cases_height = 0.5;
+            cases_height = 0.65;
         }
         if (show == 0) {
             if (persent <= 1) {
