@@ -838,7 +838,7 @@ input[type="submit"] {
 
 .modal-window {
   position: fixed;
-  z-index: 5;
+  z-index: 26;
   width: 35%;
   border-radius: 30px;
   top: 15%;
@@ -911,6 +911,10 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
   }
+  & .red-button {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
 }
 
 .shadow {
@@ -919,7 +923,7 @@ input[type="submit"] {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 25;
   background: black;
   opacity: 0.5;
   display: none;
@@ -936,7 +940,7 @@ input[type="submit"] {
   position: fixed;
   max-height: 100%;
   width: 100%;
-  z-index: 10;
+  z-index: 28;
   top: 0;
   left: 0;
   overflow-y: scroll;
