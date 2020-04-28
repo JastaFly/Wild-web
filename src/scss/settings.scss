@@ -51,6 +51,11 @@ a {
 
 header {
   padding-bottom: 9%;
+  & a {
+    &:hover {
+      color: #404041;
+    }
+  }
 }
 
 footer {

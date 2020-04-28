@@ -2,10 +2,15 @@
   display: flex;
   align-items: center;
   margin-top: 4%;
+  & a {
+    color: #404041;
+  }
   &__contact {
     font-size: 30px;
     font-family: GothamPro;
-    color: #404041;
+    & a {
+      color: #404041;
+    }
   }
   &__icon-container {
     margin-right: 5%;
