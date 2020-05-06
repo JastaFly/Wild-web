@@ -4,7 +4,7 @@
   }
 
   &__red-text {
-    font-family: GothamPro;
+    font-family: GothamProBold;
     font-size: 24px;
     color: #ed1c24;
     margin-bottom: 0;
@@ -237,6 +237,8 @@ input[type="submit"] {
 
   &__img {
     margin-right: 5%;
+    min-width: 48px;
+    height: auto;
   }
 
   &__text_white {
@@ -423,7 +425,7 @@ input[type="submit"] {
 
 .owl-prev {
   color: rgba(0, 0, 0, 0) !important;
-  background-image: url("../img/prew.png") !important;
+  background-image: url("../img/prew.svg") !important;
   background-size: cover !important;
   height: 66px !important;
   width: 66px !important;
@@ -435,7 +437,7 @@ input[type="submit"] {
 
 .owl-next {
   color: rgba(0, 0, 0, 0) !important;
-  background-image: url("../img/next.png") !important;
+  background-image: url("../img/next.svg") !important;
   background-size: cover !important;
   height: 66px !important;
   width: 66px !important;
@@ -643,12 +645,20 @@ input[type="submit"] {
     text-transform: uppercase;
     font-size: 20px;
     font-family: GothamProBold;
+    &_cross {
+      color: #404041;
+      text-decoration: line-through;
+    }
   }
 
   &__price {
     font-family: GothamProBold;
-    color: #404041;
+    color: #ed1c24;
     font-size: 30px;
+    &_cross {
+      text-decoration: line-through;
+      color: #404041;
+    }
   }
 
   &__dot {
@@ -824,18 +834,6 @@ input[type="submit"] {
   text-align: left;
 }
 
-.st0 {
-  fill: #FFFFFF;
-}
-
-.st1 {
-  fill: #19E34E;
-}
-
-.st3 {
-  fill: #19E34E;
-}
-
 .modal-window {
   position: fixed;
   z-index: 26;
@@ -875,19 +873,19 @@ input[type="submit"] {
   &__cross {
     cursor: pointer;
 
-    & .st0 {
+    & .crs0 {
       fill: #ED050C;
     }
 
-    & .st1 {
+    & .crs1 {
       fill: #ED050C;
     }
 
-    &:hover .st0 {
+    &:hover .crs0 {
       fill: #ED050C;
     }
 
-    &:hover .st1 {
+    &:hover .crs1 {
       fill: #05EDC6;
     }
   }

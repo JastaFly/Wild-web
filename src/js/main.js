@@ -36,9 +36,9 @@ $(document).ready(function () {
 
     $('.form').submit(function () {
         let m = this.hasAttribute('message');
-        console.log(m);
         let name = this.name.value;
         let number = this.telephone.value;
+        let window_form = this.hasAttribute('modal');
         if (m === true) {
             var message = this.message.value;
         } else {
@@ -49,14 +49,26 @@ $(document).ready(function () {
             'phone': number,
             'message': message
         }
-        window_form = this.hasAttribute('modal');
-        if (window_form === true) {
-            console.log(window_form);
-        }
-        $(modal[0]).slideToggle();
-        header.style.filter = 'blur(10px)';
-        main.style.filter = 'blur(10px)';
-        footer.style.filter = 'blur(10px)';
+        $.ajax({
+            url: "php/mail.php",
+            type: "POST",
+            data: data,
+            dataType: "html",
+            success: function (res) {
+                console.log(res);
+                if (window_form === true) {
+                    modal[1].style.display = 'none';
+                }
+                let modal = document.getElementsByClassName('modal-window');
+                $(modal[0]).slideToggle();
+                let header = document.getElementsByTagName('header')[0];
+                let main = document.getElementsByTagName('main')[0];
+                let footer = document.getElementsByTagName('footer')[0];
+                header.style.filter = 'blur(10px)';
+                main.style.filter = 'blur(10px)';
+                footer.style.filter = 'blur(10px)';
+            }
+        })
     });
 });
 
@@ -86,10 +98,15 @@ const show_window = function (number) {
 }
 
 const show_bind = function (elem) {
+    let old_bind = document.getElementsByClassName('bind_show')[0];
+    if (old_bind !== undefined) {
+        $(old_bind).slideToggle();
+        old_bind.classList.remove('bind_show');
+    }
     let bind = elem.children[3];
     $(bind).slideToggle();
+    bind.classList.add('bind_show');
 }
-
 
 const team_hov = function (elem, number) {
     let position_text;
@@ -200,4 +217,4 @@ const show_project = function (elem) {
     footer.style.filter = 'blur(10px)';
     shadow.style.display = 'block';
     console.log(window_number);
-}
+};
