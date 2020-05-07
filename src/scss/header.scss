@@ -73,8 +73,17 @@ header .red-button {
 }
 
 .contacts {
+  display: flex;
+  justify-content: center;
+  border-left: 1px solid #404041;
   &__mail {
     font-size: 22px;
+  }
+  &_number {
+    font-family: GothamProBold;
+  }
+  & a {
+    display: block;
   }
 }
 .logo svg {

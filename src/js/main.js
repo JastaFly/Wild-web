@@ -59,8 +59,10 @@ $(document).ready(function () {
                 if (window_form === true) {
                     modal[1].style.display = 'none';
                 }
+                window_number = 0;
                 let modal = document.getElementsByClassName('modal-window');
                 $(modal[0]).slideToggle();
+                shadow.style.display = 'block';
                 let header = document.getElementsByTagName('header')[0];
                 let main = document.getElementsByTagName('main')[0];
                 let footer = document.getElementsByTagName('footer')[0];
@@ -99,13 +101,24 @@ const show_window = function (number) {
 
 const show_bind = function (elem) {
     let old_bind = document.getElementsByClassName('bind_show')[0];
-    if (old_bind !== undefined) {
+    let bind = elem.children[3];
+    let show_class = bind.classList.contains('bind_show');
+    console.log(show_class+' гы');
+    if (old_bind !== undefined && show_class == false) {
         $(old_bind).slideToggle();
         old_bind.classList.remove('bind_show');
+        console.log(3);
     }
-    let bind = elem.children[3];
-    $(bind).slideToggle();
-    bind.classList.add('bind_show');
+    if (show_class == true) {
+        $(bind).slideToggle();
+        old_bind.classList.remove('bind_show');
+        console.log(1);
+    }
+    else {
+        $(bind).slideToggle();
+        bind.classList.add('bind_show');
+        console.log(2);
+    }
 }
 
 const team_hov = function (elem, number) {

@@ -239,6 +239,12 @@ input[type="submit"] {
     margin-right: 5%;
     min-width: 48px;
     height: auto;
+    &_doc {
+      min-width: 43px;
+    }
+    &_width-65 {
+      min-width: 65px;
+    }
   }
 
   &__text_white {

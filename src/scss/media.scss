@@ -235,6 +235,9 @@
     &__container {
       width: 65%;
     }
+    &__group {
+      padding-bottom: 15%;
+    }
   }
   .gray-text {
     font-size: 18px;
@@ -291,6 +294,13 @@
   .red-button:after {
     margin-top: -20%;
   }
+  .team__position {
+    font-size: 18px;
+    height: 15%;
+  }
+  .row_padding-top-50 {
+    padding-top: 1%;
+  }
 }
 
 @media screen and (max-width: 1366px) {
@@ -306,8 +316,11 @@
   }
   .icon {
     &__img {
-      width: 41px;
+      min-width: 41px;
       height: auto;
+      &_doc {
+        min-width: 37px;
+      }
     }
     &__text {
       font-size: 14px;
@@ -583,7 +596,7 @@
     }
 
     &__position {
-      height: 13.6%;
+      height: 13.4%;
     }
   }
   .footer-contacts__contact {
@@ -612,6 +625,7 @@
   }
   .slide {
     width: 80%;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2))
   }
   .owl-nav {
     width: 80%;
@@ -639,6 +653,10 @@
   }
   .blind__title {
     width: 100%;
+  }
+  .logo svg {
+    width: 117px;
+    height: auto;
   }
 }
 
@@ -1159,7 +1177,7 @@
   }
   .team {
     &__position {
-      height: 16.4%;
+      height: 16.2%;
     }
 
     &__foto {
@@ -1203,6 +1221,8 @@
   }
   .menstruation-bg-2 {
     background-size: cover;
+    display: flex;
+    justify-content: center;
   }
   .footer-contacts__contact {
     font-size: 30px;
@@ -1261,6 +1281,12 @@
     &__img {
       margin-bottom: 10%;
     }
+  }
+  .red-bg_height-300 {
+    box-shadow: 0 5px 5px rgba(237,28,36,0.5);
+  }
+  .row_padding-top-50 {
+    padding-top: 2%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -1345,6 +1371,9 @@
   }
   .red-bg_team {
     height: 258px;
+  }
+  .review__img_width {
+    width: 50%;
   }
 }
 @media screen and (max-width: 823px) {
@@ -1446,7 +1475,7 @@
     height: 340px;
   }
   .team__position {
-    height: 10.3%;
+    height: 10.2%;
   }
   .row_center .red-button {
     flex-basis: 35%;
@@ -1456,15 +1485,15 @@
 @media screen and (max-width: 667px) {
   .offer {
     & h1 {
-      font-size: 42px;
+      font-size: 38px;
     }
 
     &__big-text {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     &__mimi-text {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     & .red-button {
@@ -1531,9 +1560,6 @@
   .table-custom__price {
     font-size: 16px;
   }
-  .gray-text {
-    font-size: 8px;
-  }
   .contacts__mail {
     position: relative;
     bottom: 10%;
@@ -1541,14 +1567,19 @@
   .contacts {
     margin-top: -1.5%;
   }
+  .icon_padding-bot {
+    & .icon__text {
+      font-size: 10px;
+    }
+  }
 }
 @media screen and (max-width: 640px) {
   .offer {
     &__mimi-text {
-      font-size: 16px;
+      font-size: 14px;
     }
     & h1 {
-      font-size: 38px;
+      font-size: 36px;
     }
     & .red-button {
       padding-top: 5%;
@@ -1598,9 +1629,8 @@
     padding-bottom: 2%;
     font-size: 24px;
   }
-  .logo__img {
+  .logo svg {
     width: 75px;
-    height: 40px;
   }
   header .red-button {
     padding-top: 2.5%;
@@ -2082,7 +2112,7 @@
     }
   }
   .team {
-    padding-top: 7.2%;
+    padding-top: 7.3%;
 
     &__name {
       font-size: 18px;
@@ -2192,6 +2222,9 @@
   input[type="submit"] {
     padding-top: 3%;
     padding-bottom: 3%;
+  }
+  .contacts {
+    align-items: center;
   }
 }
 @media screen and (max-width: 414px) {

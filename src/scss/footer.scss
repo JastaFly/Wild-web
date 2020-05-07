@@ -12,8 +12,12 @@
       color: #404041;
     }
   }
-  &__icon-container {
-    margin-right: 5%;
+  &__icon {
+    width: 35px;
+    height: auto;
+    &-container {
+      margin-right: 5%;
+    }
   }
 }
 footer {

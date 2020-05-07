@@ -23,13 +23,13 @@ if (!empty($_POST)) {
             // Настройки вашей почты
             $mail->Host = 'smtp.gmail.com';
             $mail->Username = 'verywildweb@gmail.com';
-            $mail->Password = 'veryww1234';
+            $mail->Password = 'buunvrqffyblylvh';
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
             $mail->setFrom('verywildweb@gmail.com', 'veryww.ru');
 
             // Получатель письма
-            $mail->addAddress('zumawuu@gmail.com');
+            $mail->addAddress('verywildweb@gmail.com');
 
             $mail->isHTML(true);
 
