@@ -7,8 +7,6 @@
     <title>Заказать разработку Landing page под ключ недорого</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./libs/owl/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./libs/owl/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -28,18 +26,20 @@
                     <div class="offer__group">
                         <p class="offer__mimi-text">Рассчитайте стоимость вашего
                             лендинг пейджа за 1 минуту</p>
-                        <div class="red-button" onclick="show_window(1)">Рассчитать стоимость</div>
+                        <div class="red-button" onclick="what_fn(1, 1); show_window(1);">Рассчитать стоимость</div>
                     </div>
                 </div>
             </div>
-            <form action="" onsubmit="return false;" class="form_gray-bg col-xl-3 col-md-5 col-sm-5 col-lg-5 form">
+            <form action="" onsubmit="what_fn(2,0, this); return false;"
+                  class="form_gray-bg col-xl-3 col-md-5 col-sm-5 col-lg-5 form">
+                <input type="hidden" name="what">
                 <p class="form__title">Получите бесплатный прогноз заявок/звонков и рекламного бюджета в вашем
                     бизнесе*</p>
                 <p class="form__little-text">*Действует до 24 апреля</p>
                 <input name="name" type="text" placeholder="Имя" class="form__input form__input_white">
                 <input name="telephone" type="tel" required placeholder="Телефон" class="form__input form__input_white">
                 <div class="red-button">
-                    <input type="submit" value="Получить предложение">
+                    <input type="submit">
                 </div>
                 <p class="form__mini-text">Нажимая кнопку, вы даете согласие на обработку персональных данных</p>
             </form>
@@ -126,16 +126,7 @@
                     <span class="icon__text icon__text_white icon__text_width icon__text_width_70">Рассрочка платежа 50/50</span>
                 </div>
                 <div class="icon icon_padding">
-                    <svg class="icon__img icon__img_doc" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px"
-                         y="0px" viewBox="0 0 46.1 62.9" style="enable-background:new 0 0 46.1 62.9;"
-                         xml:space="preserve"><g>
-	                        <path class="white-icon" d="M35.5,12.5h10.6L33.6,0v10.6C33.6,11.7,34.5,12.5,35.5,12.5z"/>
-                            <path class="white-icon" d="M30.5,18.8c-1.8,0-3.3-1.5-3.3-3.3V0H3.8C1.7,0,0,1.7,0,3.8v55.3c0,2.1,1.7,3.8,3.8,3.8h38.5
-		                        c2.1,0,3.8-1.7,3.8-3.8V18.8H30.5z M29.4,52.4H10.5v-4.2h18.9V52.4z M35.7,41.9H10.5v-4.2h25.1v4.2H35.7z M35.7,31.4H10.5v-4.2
-		                        h25.1v4.2H35.7z"/>
-                        </g>
-                    </svg>
-
+                    <img src="./img/document48.svg" alt="" class="icon__img">
                     <span class="icon__text icon__text_white icon__text_width icon__text_width_70">Полный пакет бухгалтерских документов</span>
                 </div>
             </div>
@@ -478,7 +469,7 @@
             </div>
         </div>
         <div class="row row_center">
-            <div class="col-xl-3 col-md-4 col-sm-4 red-button red-button_padding" onclick="show_window(1)">
+            <div class="col-xl-3 col-md-4 col-sm-4 red-button red-button_padding" onclick="what_fn(3, 1); show_window(1)">
                 Хочу больше продаж!
             </div>
         </div>
@@ -673,7 +664,8 @@
                     конверсию в разы!</h2>
                 <div class="icon-group">
                     <div class="icon">
-                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             x="0px" y="0px"
                              viewBox="0 0 72.95 85.01" style="enable-background:new 0 0 72.95 85.01;"
                              xml:space="preserve">
                             <g>
@@ -706,7 +698,8 @@
                         <span class="icon__text icon__text_font-size-18">Увеличение числа заявок/звонков</span>
                     </div>
                     <div class="icon">
-                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             x="0px" y="0px"
                              viewBox="0 0 80 79.42" style="enable-background:new 0 0 80 79.42;" xml:space="preserve">
                             <g>
 	                            <path class="red-icon0" d="M23.7,34.4v0.05c-0.2,3.45,1.74,6.69,4.93,8.24l0.03,0.02c1.13,0.54,2.05,1.43,2.63,2.53l0.01,0.02
@@ -749,7 +742,8 @@
                 </div>
                 <div class="icon-group">
                     <div class="icon">
-                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             x="0px" y="0px"
                              viewBox="0 0 78.26 70.01" style="enable-background:new 0 0 78.26 70.01;"
                              xml:space="preserve">
                             <g>
@@ -788,7 +782,8 @@
                         <span class="icon__text icon__text_font-size-18">Каждый клиент находит то, что ищет</span>
                     </div>
                     <div class="icon">
-                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        <svg class="icon__img icon__img_width-65" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                             x="0px" y="0px"
                              viewBox="0 0 81.99 76.89" style="enable-background:new 0 0 81.99 76.89;"
                              xml:space="preserve">
                             <g>
@@ -866,7 +861,8 @@
                     </div>
                 </div>
             </div>
-            <form class="col-xl-3 col-md-4 col-sm-4 form form_white-bg" onsubmit="return false;">
+            <form class="col-xl-3 col-md-4 col-sm-4 form form_white-bg" onsubmit="what_fn(4,0, this); return false;">
+                <input type="hidden" name="what">
                 <p class="form__title form__title_red">узнать как работает?</p>
                 <input name="name" type="text" class="form__input form__input_gray" placeholder="Имя">
                 <input name="telephone" type="tel" class="form__input form__input_gray" placeholder="Телефон" required>
@@ -901,13 +897,14 @@
                     <img src="./img/yandex-certificate.jpg" alt="" class="text__img">
                     <img src="./img/gray-certificate.jpg" alt="" class="text__img">
                 </div>
-                <span class="red-button" onclick="show_window(1)">Уточнить стоимость настройки</span>
+                <span class="red-button" onclick="what_fn(5, 1); show_window(1)">Уточнить стоимость настройки</span>
             </div>
             <img src="./img/serious.png" alt=""
                  class="col-xl-6 col-lg-5 col-md-6 col-sm-6 order-first order-sm-last big-img">
         </div>
         <div class="row row_center row_padding">
-            <form action="" onsubmit="return false;" class="col-xl-10 form form_white-bg row_sp-around form_big-brd-rd">
+            <form action="" onsubmit="what_fn(6,0, this); return false;" class="col-xl-10 form form_white-bg row_sp-around form_big-brd-rd">
+                <input type="hidden" name="what">
                 <div class="form__col form__col_wide">
                     <h2>ваша страница не продает?</h2>
                     <p class="form__text">Проведем аудит и расскажем как выжать максимум из сайта</p>
@@ -1567,7 +1564,7 @@
                     <li><span>Аудит вашего сайта</span></li>
                     <li><span>Аудит рекламы Яндекс / Google</span></li>
                 </ul>
-                <p class="red-button" onclick="show_window(1)">Обсудить проект</p>
+                <p class="red-button" onclick="what_fn(7, 1); show_window(1)">Обсудить проект</p>
             </div>
         </div>
         <h2 class="revealator-slideup revealator-once">команда</h2>
@@ -1852,7 +1849,8 @@
         </div>
     </div>
     <h3>Просто оставьте нам заявку!</h3>
-    <form action="" class="form" onsubmit="return false;">
+    <form action="" modal="" class="form" onsubmit="return false;">
+        <input type="hidden" name="what">
         <input type="text" name="name" class="form__input form__input_gray" placeholder="Имя">
         <input type="tel" name="telephone" class="form__input form__input_gray" placeholder="Номер" required>
         <input type="submit" modal="1" class="red-button">
@@ -1865,14 +1863,14 @@
         <circle class="cl0" cx="25" cy="25" r="25"/>
             <g>
 	        <path class="cl1" d="M32.3,29.5c-0.9-0.9-2.1-0.9-3,0c-0.7,0.7-1.4,1.4-2.1,2.1c-0.2,0.2-0.3,0.2-0.6,0.1c-0.4-0.2-0.9-0.4-1.4-0.7
-		    c-2-1.3-3.7-2.9-5.2-4.7c-0.7-0.9-1.4-1.9-1.9-3c-0.1-0.2-0.1-0.4,0.1-0.5c0.7-0.7,1.4-1.4,2.1-2c0.9-1,0.9-2.1,0-3
-		    c-0.5-0.5-1.1-1.1-1.6-1.6c-0.6-0.6-1.1-1.1-1.7-1.7c-0.9-0.9-2.1-0.9-3,0c-0.7,0.7-1.4,1.4-2.1,2.1c-0.7,0.6-1,1.4-1.1,2.3
-		    c-0.1,1.5,0.2,2.8,0.7,4.2c1,2.8,2.6,5.2,4.5,7.5c2.6,3,5.6,5.4,9.2,7.2c1.6,0.8,3.3,1.4,5.1,1.5c1.2,0.1,2.3-0.2,3.2-1.2
-		    c0.6-0.7,1.3-1.3,1.9-1.9c0.9-0.9,0.9-2.1,0-3C34.5,31.7,33.4,30.6,32.3,29.5z"/>
+		        c-2-1.3-3.7-2.9-5.2-4.7c-0.7-0.9-1.4-1.9-1.9-3c-0.1-0.2-0.1-0.4,0.1-0.5c0.7-0.7,1.4-1.4,2.1-2c0.9-1,0.9-2.1,0-3
+		        c-0.5-0.5-1.1-1.1-1.6-1.6c-0.6-0.6-1.1-1.1-1.7-1.7c-0.9-0.9-2.1-0.9-3,0c-0.7,0.7-1.4,1.4-2.1,2.1c-0.7,0.6-1,1.4-1.1,2.3
+		        c-0.1,1.5,0.2,2.8,0.7,4.2c1,2.8,2.6,5.2,4.5,7.5c2.6,3,5.6,5.4,9.2,7.2c1.6,0.8,3.3,1.4,5.1,1.5c1.2,0.1,2.3-0.2,3.2-1.2
+		        c0.6-0.7,1.3-1.3,1.9-1.9c0.9-0.9,0.9-2.1,0-3C34.5,31.7,33.4,30.6,32.3,29.5z"/>
                 <path class="cl1" d="M32.2,24.7L32.2,24.7c0.6-0.1,1.1-0.8,0.9-1.4c-0.5-1.5-1.3-2.9-2.4-4c-1.2-1.2-2.7-2.1-4.3-2.5
-		    c-0.6-0.2-1.3,0.3-1.4,0.9l0,0c-0.1,0.5,0.3,1,0.8,1.2c1.2,0.3,2.4,1,3.3,1.9s1.5,1.9,1.9,3.1C31.1,24.5,31.6,24.8,32.2,24.7z"/>
+		            c-0.6-0.2-1.3,0.3-1.4,0.9l0,0c-0.1,0.5,0.3,1,0.8,1.2c1.2,0.3,2.4,1,3.3,1.9s1.5,1.9,1.9,3.1C31.1,24.5,31.6,24.8,32.2,24.7z"/>
                 <path class="cl1" d="M34.5,15.5c-2.2-2.2-4.9-3.7-7.9-4.3c-0.6-0.1-1.2,0.3-1.3,0.9l0,0c-0.1,0.6,0.3,1.1,0.8,1.2
-		    c2.6,0.6,5,1.8,6.9,3.7c1.8,1.8,3.1,4,3.7,6.5c0.1,0.5,0.7,0.9,1.2,0.8l0,0c0.6-0.1,1-0.7,0.9-1.4C38.1,20.2,36.6,17.6,34.5,15.5z"
+		            c2.6,0.6,5,1.8,6.9,3.7c1.8,1.8,3.1,4,3.7,6.5c0.1,0.5,0.7,0.9,1.2,0.8l0,0c0.6-0.1,1-0.7,0.9-1.4C38.1,20.2,36.6,17.6,34.5,15.5z"
                 />
         </g>
     </svg>

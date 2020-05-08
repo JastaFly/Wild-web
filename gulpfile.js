@@ -8,7 +8,6 @@ const prefixer = require('gulp-autoprefixer');
 const rigger = require('gulp-rigger');
 const rename = require("gulp-rename");
 
-
 function html() {
     return src('./src/*.html')
         .pipe(rigger())

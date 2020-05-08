@@ -39,6 +39,8 @@ $(document).ready(function () {
         let name = this.name.value;
         let number = this.telephone.value;
         let window_form = this.hasAttribute('modal');
+        console.log(window_form);
+        let what = this.what.value;
         if (m === true) {
             var message = this.message.value;
         } else {
@@ -47,7 +49,8 @@ $(document).ready(function () {
         let data = {
             'name': name,
             'phone': number,
-            'message': message
+            'message': message,
+            'what': what
         }
         $.ajax({
             url: "php/mail.php",
@@ -60,7 +63,6 @@ $(document).ready(function () {
                     modal[1].style.display = 'none';
                 }
                 window_number = 0;
-                let modal = document.getElementsByClassName('modal-window');
                 $(modal[0]).slideToggle();
                 shadow.style.display = 'block';
                 let header = document.getElementsByTagName('header')[0];
@@ -96,14 +98,14 @@ const show_window = function (number) {
     shadow.style.display = 'block';
     header.style.filter = 'blur(10px)';
     main.style.filter = 'blur(10px)';
-    footer.style.filter = 'blur(10px';
+    footer.style.filter = 'blur(10px)';
 }
 
 const show_bind = function (elem) {
     let old_bind = document.getElementsByClassName('bind_show')[0];
     let bind = elem.children[3];
     let show_class = bind.classList.contains('bind_show');
-    console.log(show_class+' гы');
+    console.log(show_class + ' гы');
     if (old_bind !== undefined && show_class == false) {
         $(old_bind).slideToggle();
         old_bind.classList.remove('bind_show');
@@ -113,8 +115,7 @@ const show_bind = function (elem) {
         $(bind).slideToggle();
         old_bind.classList.remove('bind_show');
         console.log(1);
-    }
-    else {
+    } else {
         $(bind).slideToggle();
         bind.classList.add('bind_show');
         console.log(2);
@@ -193,8 +194,7 @@ const show_cases = function (elem) {
         let cases_height;
         if (device_screen <= 576) {
             cases_height = 0.2;
-        }
-        else {
+        } else {
             cases_height = 0.65;
         }
         if (show == 0) {
@@ -231,3 +231,42 @@ const show_project = function (elem) {
     shadow.style.display = 'block';
     console.log(window_number);
 };
+
+const what_fn = function (what, modal, elem) {
+    let hidden_input;
+    let message;
+    if (modal == 1) {
+        hidden_input = document.getElementsByClassName('modal-window')[1].children[2].children[0];
+    }
+    else {
+        hidden_input = elem.what;
+    }
+    switch (what) {
+        case 1:
+            message = 'Рассчитать стоимость';
+            break;
+        case 2:
+            message = 'Получить бесплатный прогноз';
+            break;
+        case 3:
+            message = 'Больше продаж!!!';
+            break;
+        case 4:
+            message = 'Узнать как оно работает?!??';
+            break;
+        case 5:
+            message = 'Уточнить стоимость настройки';
+            break;
+        case 6:
+            message = 'Моя страница не продаёт!!! Проведите аудит и расскажите как выжить из сайта максимум!!!';
+            break;
+        case 7:
+            message = 'Обсудить проект';
+            break;
+        case 8:
+            message = 'У меня возникли вопросы?!?? Напишите мне';
+            break;
+    }
+   hidden_input.value = message;
+    console.log(hidden_input);
+}

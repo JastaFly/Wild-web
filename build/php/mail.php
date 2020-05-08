@@ -1,7 +1,6 @@
 <?php
 if (!empty($_POST)) {
     print_r($_POST);
-    echo 'Yo';
     // Файлы phpmailer
     require '../libs/php-mailer/PHPMailer.php';
     require '../libs/php-mailer/SMTP.php';
@@ -12,6 +11,7 @@ if (!empty($_POST)) {
         $name = $_POST['name'];
         $phone = $_POST['phone'];
         $message = $_POST['message'];
+        $what = $_POST['what'];
 
         $mail = new PHPMailer\PHPMailer\PHPMailer();
         try {
@@ -20,7 +20,7 @@ if (!empty($_POST)) {
             $mail->CharSet = "UTF-8";
             $mail->SMTPAuth = true;
 
-            // Настройки вашей почты
+            // Настройки почты
             $mail->Host = 'smtp.gmail.com';
             $mail->Username = 'verywildweb@gmail.com';
             $mail->Password = 'buunvrqffyblylvh';
@@ -36,7 +36,8 @@ if (!empty($_POST)) {
             $mail->Subject = 'Новая заявка на звонок!';
             $mail->Body = "<b>Имя:</b> $name <br>
                 <b>Тел:</b> $phone<br>
-                <b>Малява:</b> $message";
+                <b>Малява:</b> $message<br>
+                <b>Что хотят:</b> $what";
 
             if ($mail->send()) {
 

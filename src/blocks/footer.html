@@ -56,12 +56,13 @@
                     <a href="mailto:very@veryww.com" class="footer-contacts__contact">very@veryww.com</a>
                 </div>
                 <h2 class="align-left">возникли вопросы? напишите нам</h2>
-                <form action="" message="1" class="form" onsubmit="return false;">
+                <form action="" message="1" class="form" onsubmit="what_fn(8,0, this); return false;">
                     <div class="form__row">
                         <input name="name" type="text" placeholder="Имя" class="form__input form__input_gray">
                         <input name="telephone" type="tel" placeholder="Номер" class="form__input form__input_gray"
                                required>
                     </div>
+                    <input type="hidden" name="what">
                     <div class="form__row">
                         <input name="message" type="text" placeholder="Сообщение" class="form__input form__input_gray">
                         <div class="form__input red-button red-button_padding-none">
