@@ -1,16 +1,19 @@
 @font-face {
   font-family: GothamPro;
   src: url(../fonts/GothamPro.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: GothamProBold;
   src: url(../fonts/GothamPro-Bold.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: GothamProBlack;
   src: url(../fonts/GothamPro-Black.ttf);
+  font-display: swap;
 }
 
 body {
@@ -60,6 +63,9 @@ header {
 
 footer {
   padding-bottom: 5%;
+}
+.bold {
+  font-family: GothamProBold;
 }
 
 .row {
