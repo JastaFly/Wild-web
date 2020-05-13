@@ -129,23 +129,23 @@ const team_hov = function (elem, number) {
     let foto = elem.children[2];
     switch (number) {
         case 1:
-            position_text = 'Алло, ээ?!';
+            position_text = 'Увеличим продажи?';
             name = 'maks';
             break;
         case 2:
-            position_text = 'Ща замутим!';
+            position_text = 'Хотите свежий дизайн?';
             name = 'slava';
             break;
         case 3:
-            position_text = 'Заявки Ннда?';
+            position_text = 'Нужен актуальный маркетинг?';
             name = 'maks-ageev';
             break;
         case 4:
-            position_text = 'Фигачу прямо в цель!';
+            position_text = 'Сэкономить Ваш бюджет?';
             name = 'dima';
             break;
         case 5:
-            position_text = 'Бац, бац и в продакшен!';
+            position_text = 'Рабочий сайт надо?';
             name = 'i';
             break;
     }

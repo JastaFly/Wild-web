@@ -233,7 +233,8 @@
     }
 
     &__position {
-      height: 16%;
+      height: 14.8%;
+      font-size: 18px;
     }
   }
   .offer {
@@ -298,10 +299,6 @@
   }
   .red-button:after {
     margin-top: -20%;
-  }
-  .team__position {
-    font-size: 18px;
-    height: 15%;
   }
   .row_padding-top-50 {
     padding-top: 1%;
@@ -739,7 +736,7 @@
     padding-bottom: 1%;
   }
   .team__position {
-    height: 25.6%;
+    height: 25.8%;
   }
   .blind__link {
     width: 60%;
@@ -763,6 +760,9 @@
   }
   .very-big__title {
     font-size: 82px;
+  }
+  .team__position {
+    height: 27%;
   }
 }
 
@@ -1302,6 +1302,9 @@
     & .red-button {
       margin-top: 5%;
     }
+  }
+  .team__position {
+
   }
 }
 
