@@ -237,7 +237,7 @@ const what_fn = function (what, modal, elem) {
     let hidden_input;
     let message;
     if (modal == 1) {
-        hidden_input = document.getElementsByClassName('modal-window')[1].children[2].children[0];
+        hidden_input = document.getElementsByClassName('modal-window')[1].children[3].children[0];
     }
     else {
         hidden_input = elem.what;

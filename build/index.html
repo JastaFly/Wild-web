@@ -1917,26 +1917,6 @@
 	            l8.49,8.49L19.8,0l2.83,2.83l-8.49,8.48L22.63,19.8z"/>
         </svg>
     </div>
-    <p class="modal-window__title">Оставьте свой номер телефона</p>
-    <p class="modal-window__text">Мы БЕСПЛАТНО проведём комплексное исследование вашей ниши, чтобы выяснить конкретные
-        показатели</p>
-    <form action="" class="modal-form form">
-        <input type="hidden" name="what">
-        <input type="text" placeholder="Ваше имя" class="modal-form__input">
-        <input type="tel" placeholder="Телефон" required class="modal-form__input">
-        <input type="submit" modal="1" class="modal-form__button red-button">
-    </form>
-    <p class="modal-window__mini-text">нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
-</div>
-<div class="modal-window">
-    <div onclick="close_window()" class="modal-window__cross">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22.63px"
-             height="22.63px" viewBox="0 0 22.63 22.63" style="enable-background:new 0 0 22.63 22.63;"
-             xml:space="preserve">
-            <path id="Rectangle_2_copy_1_" class="cross0" d="M22.63,19.8l-2.83,2.83l-8.49-8.49l-8.48,8.49L0,19.8l8.49-8.49L0,2.83L2.83,0
-	            l8.49,8.49L19.8,0l2.83,2.83l-8.49,8.48L22.63,19.8z"/>
-        </svg>
-    </div>
     <p class="modal-window__title">Спасибо за заявку</p>
     <p class="modal-window__text">наши менеджеры свяжутся с вами в ближайшее время</p>
     <div class="modal-window__finger">
@@ -1961,6 +1941,26 @@
         </g>
     </svg>
     </div>
+</div>
+<div class="modal-window">
+    <div onclick="close_window()" class="modal-window__cross">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="22.63px"
+             height="22.63px" viewBox="0 0 22.63 22.63" style="enable-background:new 0 0 22.63 22.63;"
+             xml:space="preserve">
+            <path id="Rectangle_2_copy_1_" class="cross0" d="M22.63,19.8l-2.83,2.83l-8.49-8.49l-8.48,8.49L0,19.8l8.49-8.49L0,2.83L2.83,0
+	            l8.49,8.49L19.8,0l2.83,2.83l-8.49,8.48L22.63,19.8z"/>
+        </svg>
+    </div>
+    <p class="modal-window__title">Оставьте свой номер телефона</p>
+    <p class="modal-window__text">Мы БЕСПЛАТНО проведём комплексное исследование вашей ниши, чтобы выяснить конкретные
+        показатели</p>
+    <form action="" modal="" onsubmit="return false;"  class="modal-form form">
+        <input type="hidden" name="what">
+        <input type="text" name="name" placeholder="Ваше имя" class="modal-form__input">
+        <input type="tel" name="telephone" placeholder="Телефон" required class="modal-form__input">
+        <input type="submit" modal="1" class="modal-form__button red-button">
+    </form>
+    <p class="modal-window__mini-text">нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
 </div>
 <div class="callback" onclick="show_window(1)">
     <div class="callback__img">
