@@ -20,7 +20,8 @@ $(document).ready(function () {
         items: 1,
         loop: true,
         nav: true,
-        autoplay: true
+        autoplay: true,
+        autoplayTimeout: 30000
     });
     $(".slider-team").owlCarousel({
         items: 1,
@@ -39,7 +40,6 @@ $(document).ready(function () {
         let name = this.name.value;
         let number = this.telephone.value;
         let window_form = this.hasAttribute('modal');
-        console.log(window_form);
         let what = this.what.value;
         if (m === true) {
             var message = this.message.value;
@@ -71,6 +71,7 @@ $(document).ready(function () {
                 header.style.filter = 'blur(10px)';
                 main.style.filter = 'blur(10px)';
                 footer.style.filter = 'blur(10px)';
+                ym(61783960,'reachGoal','zayvka'); return true;
             }
         })
     });

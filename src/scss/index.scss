@@ -67,6 +67,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 5%;
+
     &:nth-child(2) {
       margin-bottom: 0;
     }
@@ -74,6 +75,7 @@
     &:last-child {
       justify-content: flex-end;
       padding-right: 2%;
+
       & .form__mini-text {
         flex-basis: 45%;
         margin-top: 2%;
@@ -239,9 +241,11 @@ input[type="submit"] {
     margin-right: 5%;
     min-width: 48px;
     height: auto;
+
     &_doc {
       min-width: 43px;
     }
+
     &_width-65 {
       min-width: 65px;
     }
@@ -359,6 +363,7 @@ input[type="submit"] {
       text-transform: none;
       color: #404041;
     }
+
     &_bot-border {
       border-bottom: #c8c8c8 solid 1px;
       width: 110%;
@@ -651,6 +656,7 @@ input[type="submit"] {
     text-transform: uppercase;
     font-size: 20px;
     font-family: GothamProBold;
+
     &_cross {
       color: #404041;
       text-decoration: line-through;
@@ -661,6 +667,7 @@ input[type="submit"] {
     font-family: GothamProBold;
     color: #ed1c24;
     font-size: 30px;
+
     &_cross {
       text-decoration: line-through;
       color: #404041;
@@ -677,6 +684,16 @@ input[type="submit"] {
     &_red {
       background-color: #ed1c24;
     }
+  }
+
+  &__head {
+    color: #ed1c24;
+    font-family: GothamProBold;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 20%;
+    border-right: 1px solid #b8b8b8;
   }
 }
 
@@ -840,87 +857,6 @@ input[type="submit"] {
   text-align: left;
 }
 
-.modal-window {
-  position: fixed;
-  z-index: 26;
-  width: 35%;
-  border-radius: 30px;
-  top: 15%;
-  left: 33%;
-  background-color: #FFFFFF;
-  padding-bottom: 2%;
-  display: none;
-
-  & h3 {
-    text-align: center;
-    margin-bottom: 5%;
-  }
-
-  & input {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 5%;
-    width: 80%;
-
-    &[type=submit] {
-      width: 60%;
-    }
-  }
-
-  &__top {
-    height: 90px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 30px 30px 0 0;
-    padding-right: 5%;
-  }
-
-  &__cross {
-    cursor: pointer;
-
-    & .crs0 {
-      fill: #ED050C;
-    }
-
-    & .crs1 {
-      fill: #ED050C;
-    }
-
-    &:hover .crs0 {
-      fill: #ED050C;
-    }
-
-    &:hover .crs1 {
-      fill: #05EDC6;
-    }
-  }
-
-  &__big-text {
-    font-size: 72px;
-    font-family: GothamProBold;
-    text-align: center;
-    color: #ed1c24;
-    margin-bottom: 0;
-  }
-
-  &__mini-text {
-    font-size: 24px;
-    color: #ed1c24;
-    font-family: GothamPro;
-    text-align: center;
-  }
-
-  &__ok {
-    display: flex;
-    justify-content: center;
-  }
-  & .red-button {
-    padding-top: 3%;
-    padding-bottom: 3%;
-  }
-}
-
 .shadow {
   position: fixed;
   width: 100%;
@@ -966,6 +902,7 @@ input[type="submit"] {
 .mobile-on {
   display: none !important;
 }
+
 .other {
   font-family: GothamProBold;
   font-size: 14px;
@@ -974,6 +911,7 @@ input[type="submit"] {
   z-index: 16;
   margin-top: 13%;
 }
+
 .callback {
   height: 50px;
   width: 50px;
@@ -985,15 +923,19 @@ input[type="submit"] {
   animation: wave linear 1s infinite;
   border-radius: 50%;
   background-color: #ed1c24;
+
   &:hover &__text {
     display: block;
   }
+
   &:hover &__img {
     display: none;
   }
+
   &__img {
     animation: shake linear 1s infinite;
   }
+
   &__text {
     position: relative;
     color: white;
@@ -1007,6 +949,7 @@ input[type="submit"] {
     display: none;
   }
 }
+
 .up {
   height: 50px;
   width: 50px;
@@ -1016,12 +959,15 @@ input[type="submit"] {
   z-index: 20;
   border-radius: 50%;
   background-color: #ed1c24;
+
   &:hover &__text {
     display: block;
   }
+
   &:hover &__img {
     display: none;
   }
+
   &__text {
     position: relative;
     color: white;
@@ -1035,6 +981,81 @@ input[type="submit"] {
     display: none;
   }
 }
+
 .row_center .red-button {
   flex-basis: 15%;
+}
+
+.modal-window {
+  position: fixed;
+  width: 500px;
+  top: 15%;
+  left: 37%;
+  border-radius: 20px;
+  background-image: url("../img/modal-menstruation-bg.jpg");
+  background-size: cover;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  z-index: 30;
+  display: none;
+
+  &__title {
+    font-family: GothamProBold;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ed1c24;
+  }
+
+  &__text {
+    font-family: GothamPro;
+    font-size: 16px;
+    color: #404041;
+    text-align: center;
+  }
+
+  &__cross {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: -2%;
+    cursor: pointer;
+  }
+  &__mini-text {
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+  &__finger {
+    padding-bottom: 10%;
+    & svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.modal-form {
+  &__input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 4%;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    outline: none;
+  }
+  &__button {
+    padding-top: 3% !important;
+    padding-bottom: 3%!important;
+    width: 50% !important;
+    display: block;
+    margin: 0 auto;
+  }
 }
