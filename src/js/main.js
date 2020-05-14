@@ -20,8 +20,7 @@ $(document).ready(function () {
         items: 1,
         loop: true,
         nav: true,
-        autoplay: true,
-        autoplayTimeout: 30000
+        autoplay: true
     });
     $(".slider-team").owlCarousel({
         items: 1,
