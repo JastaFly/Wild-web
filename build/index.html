@@ -209,7 +209,7 @@
                     бизнесе*</p>
                 <p class="form__little-text">*Действует до 20 мая</p>
                 <input name="name" type="text" placeholder="Имя" class="form__input form__input_white">
-                <input name="telephone" type="tel" required placeholder="Телефон" class="form__input form__input_white">
+                <input minlength="11" name="telephone" type="tel" required placeholder="Телефон" class="form__input form__input_white">
                 <div class="red-button">
                     <input type="submit">
                 </div>
@@ -1095,7 +1095,7 @@
                 </div>
                 <div class="form__col">
                     <input name="name" type="text" class="form__input form__input_gray" placeholder="Имя">
-                    <input name="telephone" type="tel" class="form__input form__input_gray" placeholder="Телефон"
+                    <input  minlength="11" name="telephone" type="tel" class="form__input form__input_gray" placeholder="Телефон"
                            required>
                 </div>
                 <div class="form__col">
@@ -2103,7 +2103,7 @@
                 <form action="" message="1" class="form" onsubmit="what_fn(8,0, this); return false;">
                     <div class="form__row">
                         <input name="name" type="text" placeholder="Имя" class="form__input form__input_gray">
-                        <input name="telephone" type="tel" placeholder="Номер" class="form__input form__input_gray"
+                        <input  minlength="11" name="telephone" type="tel" placeholder="Номер" class="form__input form__input_gray"
                                required>
                     </div>
                     <input type="hidden" name="what">
